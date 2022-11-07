@@ -4,7 +4,8 @@
 
 ## Instalações até o momento: 
 ```
-
+npm create vite@latest
+npm install
 ```
 
 ## Scripts criados no package.json:
