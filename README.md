@@ -10,6 +10,8 @@
 - Classes: PascalCase
 - nome de arquivos utilizar ponto e não _ ou espaço, exemplo: metodo.metodo
 
+- O projeto será em MOBILE FIRST.
+
 - Convide um colaborador para revisar seu pull request.
 
 - Merge apenas quando existir um progresso e tudo estiver funcionando corretamente.
