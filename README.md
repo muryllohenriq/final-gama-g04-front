@@ -22,6 +22,7 @@
 ```
 npm create vite@latest
 npm install
+npm i react-router-dom bootstrap react-bootstrap
 ```
 
 ## Scripts criados no package.json:
