@@ -1,7 +1,10 @@
-/* #styleButtons {
+#styleButtons {
+  background: #dcdcdc;
+  border-radius: 8px;
+  color: black;
+}
+
+.styledNav {
   display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
-  background-color: gray;
-  padding: 10px;
-} */
+  justify-content: center;
+}

@@ -7,19 +7,23 @@ function Navbar() {
     <>
       <NavbarBs>
         <Container>
-          <Nav>
-            <Button variant="secondary" href="#bebidas">
+          <Nav className="styledNav">
+            <Button variant="outline-light" id="styleButtons" href="#bebidas">
               Bebidas
             </Button>{" "}
-            <Button id="styleButtons" href="#entradas">
+            <Button variant="outline-light" id="styleButtons" href="#entradas">
               Entradas
             </Button>{" "}
-            <Button id="styleButtons" href="#saladas">
-              Saladas{" "}
-            </Button>
-            <Button id="styleButtons" href="#hamburgueres">
-              Hambúrgueres{" "}
-            </Button>
+            <Button variant="outline-light" id="styleButtons" href="#saladas">
+              Saladas
+            </Button>{" "}
+            <Button
+              variant="outline-light"
+              id="styleButtons"
+              href="#hamburgueres"
+            >
+              Hambúrgueres
+            </Button>{" "}
           </Nav>
         </Container>
       </NavbarBs>
