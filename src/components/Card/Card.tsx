@@ -1,5 +1,5 @@
 import { CardStyle } from "./Card.style";
-import {Badge} from "./Badge"
+import {Badge} from "../Badge/Badge"
 
 export function Card() {
   return (
