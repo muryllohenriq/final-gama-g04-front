@@ -1,11 +1,10 @@
-import Header from "../components/Header";
-import { Card } from "../components/Card";
+import Header from "../components/Header/Header";
 
 function Details() {
     return (
         <>
         <Header hasGoBack/>
-            <h1>Details</h1>       
+            <h1>Details</h1>        
         
 
         </>
