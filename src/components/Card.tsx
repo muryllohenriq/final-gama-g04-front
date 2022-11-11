@@ -1,7 +1,7 @@
 import { CardStyle } from "./Card.style";
 import {Badge} from "./Badge"
 
-function Card() {
+export function Card() {
     return (
         <CardStyle>
           <div className="image"><img src="/src/assets/Rectangle 4.png" alt="" /></div>
@@ -19,5 +19,3 @@ function Card() {
         </CardStyle>
     )
 }
-
-export default Card;

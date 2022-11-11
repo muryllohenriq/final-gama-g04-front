@@ -9,6 +9,7 @@ export const CardStyle = styled.section `
   display: flex;
   align-items: center;
   font-family: 'Questrial', sans-serif;
+  margin-top: 4px;
 
 
 
