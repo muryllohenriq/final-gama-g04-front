@@ -14,22 +14,26 @@ export const CardStyle = styled.section `
 
 
   strong {
-    padding-bottom: 8px;
-    padding-top: 20px;
+    padding-bottom: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
   }
 
-  .image {
+  img {
     margin-left: 4px;
   }
 
-  .card-header {
-    display: flex;
-    justify-content: space-between;
+  .image {
+    border-radius: 12px;
   }
 
   .badge-div {
-    padding-top: 12px;
-    padding-right: 8px;
+    padding-top: 16px;
+    padding-right: 6px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .info{
@@ -40,7 +44,7 @@ export const CardStyle = styled.section `
 
   .description {
     margin: 0;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
     padding-right: 8px;
     font-style: normal;
     font-weight: 400;
@@ -53,8 +57,8 @@ export const CardStyle = styled.section `
     font-weight: 400;
     font-size: 16px;
     line-height: 110%;
-
-
     color: #000000;
+    text-align: end;
+    padding-right: 8px;
   }
 `
