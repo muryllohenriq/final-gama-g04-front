@@ -26,6 +26,7 @@ npm i react-router-dom bootstrap react-bootstrap
 npm i --save-dev @types/react-router-dom
 npm install axios
 npm install @reduxjs/toolkit react-redux
+npm install react-icons --save
 ```
 
 ## Scripts criados no package.json:
