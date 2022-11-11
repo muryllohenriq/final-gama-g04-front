@@ -1,6 +1,6 @@
 
 type BadgeProps = {
-  id: string;
+  id?: string;
 }
 
 export function Badge(props: BadgeProps) {

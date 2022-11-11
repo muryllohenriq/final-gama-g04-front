@@ -1,0 +1,10 @@
+#styleButtons {
+  background: #dcdcdc;
+  border-radius: 8px;
+  color: black;
+}
+
+.styledNav {
+  display: flex;
+  justify-content: center;
+}
