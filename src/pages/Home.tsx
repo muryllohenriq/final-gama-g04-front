@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import {Card} from "../components/Card"
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import "./Home.css";
 
