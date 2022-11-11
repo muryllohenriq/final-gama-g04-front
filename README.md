@@ -27,6 +27,8 @@ npm i --save-dev @types/react-router-dom
 npm install axios
 npm install @reduxjs/toolkit react-redux
 npm install react-icons --save
+npm install --save styled-components
+npm i --save-dev @types/styled-components
 ```
 
 ## Scripts criados no package.json:
