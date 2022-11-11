@@ -1,6 +1,9 @@
 function Card() {
     return (
-        <h1>Card</h1>
+        <section>
+          <div></div>
+          <div></div>
+        </section>
     )
 }
 
