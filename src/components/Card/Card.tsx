@@ -1,9 +1,13 @@
 import { CardStyle } from "./Card.style";
 import {Badge} from "../Badge/Badge"
 
-export function Card() {
+type CardProps = {
+  cardClass?: string;
+}
+
+export function Card(props: CardProps) {
   return (
-    <CardStyle>
+    <CardStyle className={props.cardClass}>
       <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
       <div className="info">
         <div className="badge-div">
