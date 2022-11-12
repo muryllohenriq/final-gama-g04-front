@@ -1,22 +1,22 @@
-.navbar {
-    height: 63px;
-    background-color: #A14C47;
+.navbarHeader {
+  height: 63px;
+  background-color: #a14c47;
 }
 
 .btn-go-back {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box-logo {
-    flex: 1; 
-    display: flex; 
-    justify-content: center
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-margin-right {
-    margin-right: 40px; 
+  margin-right: 40px;
 }
