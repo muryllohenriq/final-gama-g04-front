@@ -1,10 +1,14 @@
 #styleButtons {
-  background: #dcdcdc;
+  background: #a24c47;
   border-radius: 8px;
-  color: black;
+  color: white;
 }
 
 .styledNav {
-  display: flex;
-  justify-content: center;
+  overflow-x: scroll;
+  margin: 2% 0% 0% 2%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
