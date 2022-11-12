@@ -61,4 +61,20 @@ export const CardStyle = styled.section `
     text-align: end;
     padding-right: 8px;
   }
+
+  &.details {
+    background: none;
+    flex-direction: column;
+    .image{
+      margin-left: 60px;
+      width: 300px;
+      height: 200px      
+    } 
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;   
+    margin-top: 4px;
+  }  
 `
