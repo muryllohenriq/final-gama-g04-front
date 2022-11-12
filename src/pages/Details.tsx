@@ -4,8 +4,7 @@ import {Card} from "../components/Card/Card"
 function Details() {
     return (
         <>
-            <Header hasGoBack/>
-            <h1>Details</h1>
+            <Header hasGoBack/>            
             <Card cardClass="details"/>
         </>
     )
