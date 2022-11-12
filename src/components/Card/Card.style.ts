@@ -61,4 +61,8 @@ export const CardStyle = styled.section `
     text-align: end;
     padding-right: 8px;
   }
+
+  &.details {
+    background: none;
+  }
 `
