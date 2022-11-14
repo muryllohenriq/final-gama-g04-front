@@ -1,4 +1,4 @@
-import { CardStyle } from "./Card.style";
+import {DetailsStyle} from "./Card.style";
 import {Badge} from "../Badge/Badge"
 
 type CardProps = {
@@ -7,7 +7,7 @@ type CardProps = {
 
 export function CardDetails(props: CardProps) {
     return (
-      <CardDetailsStyle className={props.cardClass}>
+      <DetailsStyle className={props.cardClass}>
         <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
         <div className="info">
           <div className="badge-div">
@@ -18,6 +18,6 @@ export function CardDetails(props: CardProps) {
         <p className="description">Texto de descrição. Texto de descrição. Texto de de...</p>
         <p className="price">R$ 00,00</p>
         </div>
-      </CardDetailsStyle>
+      </DetailsStyle>
       )
   }
