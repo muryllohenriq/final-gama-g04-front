@@ -34,9 +34,12 @@ function Navbar() {
       <Container>
         <Category nome="Bebidas" />
         <Card />
+        <Card />
         <Category nome="Entradas" />
         <Card />
         <Category nome="Saladas" />
+        <Card />
+        <Card />
         <Card />
         <Category nome="Hamburgueres" />
         <Card />
