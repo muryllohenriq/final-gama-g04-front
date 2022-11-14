@@ -10,14 +10,14 @@ export function CardDetails(props: CardProps) {
       <DetailsStyle className={props.cardClass}>
         <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
         <div className="info">
-          <div className="badge-div">
-            <Badge id="1"/>
-            <Badge id="2"/>
+          <div className="badges">
+            <Badge id="1" />
+            <Badge id="2" />
           </div>
-        <strong>Guioza de legumes</strong>
-        <p className="description">Texto de descrição. Texto de descrição. Texto de de...</p>
-        <p className="price">R$ 00,00</p>
+            <strong className="food-name">Guioza de legumes</strong>
+            <p className="text">Texto de descrição. Texto de descrição. Texto de descrição...</p>
+          <p className="price">R$ 00,00</p>
         </div>
       </DetailsStyle>
-      )
+    );
   }
