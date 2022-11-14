@@ -1,4 +1,4 @@
-import {DetailsStyle} from "./Card.style";
+import {DetailsStyle} from "./Details.style"
 import {Badge} from "../Badge/Badge"
 
 type CardProps = {
