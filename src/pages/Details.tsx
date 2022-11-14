@@ -1,11 +1,11 @@
 import Header from "../components/Header/Header";
-import {Card} from "../components/Card/Card"
+import { CardDetails } from "../components/Card/Details";
 
 function Details() {
     return (
         <>
             <Header hasGoBack/>            
-            <Card cardClass="details"/>
+            <CardDetails cardClass="details"/>
         </>
     )
 }
