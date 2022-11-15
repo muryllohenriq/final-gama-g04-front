@@ -1,17 +1,14 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const CardStyle = styled.section `
-
-  background-color: #EDEDED;
+export const CardStyle = styled.section`
+  background-color: #ededed;
   width: 320px;
   height: 124px;
   border-radius: 16px;
   display: flex;
   align-items: center;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   margin-top: 4px;
-
-
 
   strong {
     padding-bottom: 4px;
@@ -36,7 +33,7 @@ export const CardStyle = styled.section `
     justify-content: flex-end;
   }
 
-  .info{
+  .info {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -61,4 +58,4 @@ export const CardStyle = styled.section `
     text-align: end;
     padding-right: 8px;
   }
-`
+`;

@@ -22,7 +22,7 @@ function Navbar() {
           <Button
             variant="outline-light"
             id="styleButtons"
-            href="#Hamburgueres"
+            href="#Hambúrgueres"
           >
             Hambúrgueres
           </Button>
@@ -33,18 +33,9 @@ function Navbar() {
       </NavbarBs>
       <Container>
         <Category nome="Bebidas" />
-        <Card />
-        <Card />
-        <Category nome="Entradas" />
-        <Card />
-        <Category nome="Saladas" />
-        <Card />
-        <Card />
-        <Card />
-        <Category nome="Hamburgueres" />
-        <Card />
-        <Category nome="Sobremesas" />
-        <Card />
+        <div className="styledCards">
+          <Card />
+        </div>
       </Container>
     </>
   );
