@@ -4,7 +4,7 @@ export const DetailsStyle = styled.section`
   .info {
     background: none;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     height: 150px;
     border-radius: 16px;
     display: flex;
@@ -12,24 +12,38 @@ export const DetailsStyle = styled.section`
   }
   .food-name {
     font-size: 24px;
-    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    width: 60%;
+  }
+  .icon {
+    
+  }
+  .description {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0.25rem;
+    margin-top: 2rem;
   }
   .text {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    padding-left: 2rem;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    width: 60%;
   }
   .image {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 2rem;
     width: 300px;
     height: 150px;
   }
   .badges {
-    margin-top: 1rem;
-    padding-left: 15rem;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    margin-right: 6.5rem;
   }
-  .price{
+  .price {
     margin-top: 1rem;
     margin-left: 14rem;
   }
