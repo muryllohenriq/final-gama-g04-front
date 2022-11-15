@@ -16,7 +16,7 @@ export const DetailsStyle = styled.section`
     margin-top: 0.25rem;
     margin-bottom: 0rem;
     margin-left: 2.5rem;
-    width: 65%;
+    width: 100%;
   }
   .icon {
     width: 18px;
