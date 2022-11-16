@@ -7,123 +7,127 @@ import api from "../services/api";
 import "./Home.css";
 
 function Navbar() {
- const [productList, setProductList] = useState<CardProps[]>([]);
+  const [productList, setProductList] = useState<CardProps[]>([]);
 
- async function getProductData() {
-  const response = await api.get("products");
-  setProductList(response.data);
- }
+  async function getProductData() {
+    const response = await api.get("products");
+    setProductList(response.data);
+  }
 
- useEffect(() => {
-  getProductData();
- }, []);
+  useEffect(() => {
+    getProductData();
+  }, []);
 
- return (
-  <>
-   <Header />
-   <NavbarBs>
-    <Nav className="styledNav">
-     <Button variant="outline-light" id="styleButtons" href="#Bebidas">
-      Bebidas
-     </Button>
-     <Button variant="outline-light" id="styleButtons" href="#Entradas">
-      Entradas
-     </Button>
-     <Button variant="outline-light" id="styleButtons" href="#Saladas">
-      Saladas
-     </Button>
-     <Button variant="outline-light" id="styleButtons" href="#Hamburgueres">
-      Hambúrgueres
-     </Button>
-     <Button variant="outline-light" id="styleButtons" href="#Sobremesas">
-      Sobremesas
-     </Button>
-    </Nav>
-   </NavbarBs>
-   <Container>
-    <Category nome="Bebidas" />
-    {productList.map((product, index) => {
-     return (
-      <Card
-       key={index}
-       idProduct={product.idProduct}
-       name={product.name}
-       isGlutenFree={product.isGlutenFree}
-       isVegan={product.isVegan}
-       category={product.category}
-       description={product.description}
-       price={product.price}
-       image={product.image}
-      />
-     );
-    })}
-    <Category nome="Entradas" />
-    {productList.map((product, index) => {
-     return (
-      <Card
-       key={index}
-       idProduct={product.idProduct}
-       name={product.name}
-       isGlutenFree={product.isGlutenFree}
-       isVegan={product.isVegan}
-       category={product.category}
-       description={product.description}
-       price={product.price}
-       image={product.image}
-      />
-     );
-    })}
-    <Category nome="Saladas" />
-    {productList.map((product, index) => {
-     return (
-      <Card
-       key={index}
-       idProduct={product.idProduct}
-       name={product.name}
-       isGlutenFree={product.isGlutenFree}
-       isVegan={product.isVegan}
-       category={product.category}
-       description={product.description}
-       price={product.price}
-       image={product.image}
-      />
-     );
-    })}
-    <Category nome="Hamburgueres" />
-    {productList.map((product, index) => {
-     return (
-      <Card
-       key={index}
-       idProduct={product.idProduct}
-       name={product.name}
-       isGlutenFree={product.isGlutenFree}
-       isVegan={product.isVegan}
-       category={product.category}
-       description={product.description}
-       price={product.price}
-       image={product.image}
-      />
-     );
-    })}
-    <Category nome="Sobremesas" />
-    {productList.map((product, index) => {
-     return (
-      <Card
-       key={index}
-       idProduct={product.idProduct}
-       name={product.name}
-       isGlutenFree={product.isGlutenFree}
-       isVegan={product.isVegan}
-       category={product.category}
-       description={product.description}
-       price={product.price}
-       image={product.image}
-      />
-     );
-    })}
-   </Container>
-  </>
- );
+  return (
+    <>
+      <Header />
+      <NavbarBs>
+        <Nav className="styledNav">
+          <Button variant="outline-light" id="styleButtons" href="#Bebidas">
+            Bebidas
+          </Button>
+          <Button variant="outline-light" id="styleButtons" href="#Entradas">
+            Entradas
+          </Button>
+          <Button variant="outline-light" id="styleButtons" href="#Saladas">
+            Saladas
+          </Button>
+          <Button
+            variant="outline-light"
+            id="styleButtons"
+            href="#Hamburgueres"
+          >
+            Hambúrgueres
+          </Button>
+          <Button variant="outline-light" id="styleButtons" href="#Sobremesas">
+            Sobremesas
+          </Button>
+        </Nav>
+      </NavbarBs>
+      <Container className="styledCards">
+        <Category nome="Bebidas" />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
+        <Category nome="Entradas" />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
+        <Category nome="Saladas" />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
+        <Category nome="Hamburgueres" />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
+        <Category nome="Sobremesas" />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
+      </Container>
+    </>
+  );
 }
 
 export default Navbar;
