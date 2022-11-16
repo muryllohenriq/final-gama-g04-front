@@ -9,30 +9,30 @@ function Navbar() {
   return (
     <>
       <Header />
-      <NavbarBs>
-        <Nav className="styledNav">
-          <Button variant="outline-light" id="styleButtons" href="#Bebidas">
-            Bebidas
-          </Button>
-          <Button variant="outline-light" id="styleButtons" href="#Entradas">
-            Entradas
-          </Button>
-          <Button variant="outline-light" id="styleButtons" href="#Saladas">
-            Saladas
-          </Button>
-          <Button
-            variant="outline-light"
-            id="styleButtons"
-            href="#Hamburgueres"
-          >
-            Hambúrgueres
-          </Button>
-          <Button variant="outline-light" id="styleButtons" href="#Sobremesas">
-            Sobremesas
-          </Button>
-        </Nav>
-      </NavbarBs>
-      <Container>
+        <NavbarBs style={{marginTop: '63px', backgroundColor: 'white', height: '60px'}} fixed="top">
+          <Nav className="styledNav">
+            <Button variant="outline-light" id="styleButtons" href="#Bebidas">
+              Bebidas
+            </Button>
+            <Button variant="outline-light" id="styleButtons" href="#Entradas">
+              Entradas
+            </Button>
+            <Button variant="outline-light" id="styleButtons" href="#Saladas">
+              Saladas
+            </Button>
+            <Button
+              variant="outline-light"
+              id="styleButtons"
+              href="#Hamburgueres"
+            >
+              Hambúrgueres
+            </Button>
+            <Button variant="outline-light" id="styleButtons" href="#Sobremesas">
+              Sobremesas
+            </Button>
+          </Nav>
+        </NavbarBs>
+      <Container style={{marginTop: '63px'}}>
         <Category nome="Bebidas" />
         <Card />
         <Card />
@@ -47,7 +47,6 @@ function Navbar() {
         <Category nome="Sobremesas" />
         <Card />
       </Container>
-      
     </>
   );
 }
