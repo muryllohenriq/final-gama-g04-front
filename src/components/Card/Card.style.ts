@@ -79,3 +79,5 @@ export const CardStyle = styled.section `
 export const CustomLink = styled(Link) `
 text-decoration: none;
 `
+
+
