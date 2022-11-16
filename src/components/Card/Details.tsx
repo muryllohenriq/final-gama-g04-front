@@ -2,28 +2,36 @@ import { DetailsStyle } from "./Details.style"
 import { Badge } from "../Badge/Badge"
 import Icon from "../../assets/icon-people.png"
 
-type CardProps = {
-  cardClass?: string;
-}
+export type CardProps = {
+  idProduct: number,
+  name: string,
+  description: string,
+  image: string,
+  price: number,
+  isVegan: boolean,
+  isGlutenFree: boolean,
+  isEnough: number,
+  category: number,
+};
 
 export function CardDetails(props: CardProps) {
     return (
-      <DetailsStyle className={props.cardClass}>
+      <DetailsStyle>
         <div className="container">
           <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
           <div className="info">
             <div className="badges">
-              <Badge id="1" text="details" />
-              <Badge id="2" text="details" />
+            {props.isGlutenFree ? <Badge id="2" text="details"/> : ""}
+            {props.isVegan ? <Badge id="1" text="details"/> : ""}
             </div>
             <div className="description">
-              <p className="food-name">Guioza de legumes</p>
+              <p className="food-name">{props.name}</p>
               <p className="people">
                 <img src={Icon} className="icon" alt="icone de pessoas"></img>
-                Serve até 3 pessoas
+                {props.isEnough}
               </p>
               <p className="text">
-                Texto de descrição. Texto de descrição. Texto de descriç...
+              {props.description}
               </p>
             </div>
             <p className="price">R$ 00,00</p>
