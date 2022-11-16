@@ -38,7 +38,6 @@ function Navbar() {
           <Card />
         </div>
       </Container>
-      
     </>
   );
 }

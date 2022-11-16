@@ -14,11 +14,6 @@
   width: 0px;
 }
 
-/* .styledCategories {
-  display: flex;
-  flex-direction: initial;
-} */
-
 .styledCards {
   display: flex;
   flex-direction: column;
