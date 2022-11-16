@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import { Card, CardProps } from "../components/Card/Card";
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { Category } from "../components/Category/Category";
-import api from "../services/api"
+import api from "../services/api";
 import "./Home.css";
 
 function Navbar() {
@@ -46,7 +46,7 @@ function Navbar() {
      return (
       <Card
        key={index}
-       idProduct={1}
+       idProduct={product.idProduct}
        name={product.name}
        isGlutenFree={product.isGlutenFree}
        isVegan={product.isVegan}
@@ -62,7 +62,7 @@ function Navbar() {
      return (
       <Card
        key={index}
-       idProduct={2}
+       idProduct={product.idProduct}
        name={product.name}
        isGlutenFree={product.isGlutenFree}
        isVegan={product.isVegan}
@@ -78,7 +78,7 @@ function Navbar() {
      return (
       <Card
        key={index}
-       idProduct={3}
+       idProduct={product.idProduct}
        name={product.name}
        isGlutenFree={product.isGlutenFree}
        isVegan={product.isVegan}
@@ -94,7 +94,7 @@ function Navbar() {
      return (
       <Card
        key={index}
-       idProduct={4}
+       idProduct={product.idProduct}
        name={product.name}
        isGlutenFree={product.isGlutenFree}
        isVegan={product.isVegan}
@@ -110,7 +110,7 @@ function Navbar() {
      return (
       <Card
        key={index}
-       idProduct={5}
+       idProduct={product.idProduct}
        name={product.name}
        isGlutenFree={product.isGlutenFree}
        isVegan={product.isVegan}

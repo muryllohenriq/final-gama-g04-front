@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const CardStyle = styled.section `
@@ -19,6 +20,7 @@ export const CardStyle = styled.section `
     font-weight: 600;
     font-size: 15px;
     line-height: 150%;
+    color: #000;
   }
 
   img {
@@ -72,5 +74,8 @@ export const CardStyle = styled.section `
     margin: 0;
     padding-top: 15px;
   }
+`
 
+export const CustomLink = styled(Link) `
+text-decoration: none;
 `

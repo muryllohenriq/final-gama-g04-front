@@ -1,4 +1,5 @@
 import { CardStyle } from "./Card.style";
+import { CustomLink } from "./Card.style";
 import {Badge} from "../Badge/Badge"
 
 export type CardProps = {
@@ -14,6 +15,7 @@ export type CardProps = {
 
 export function Card(props: CardProps) {
   return (
+    <CustomLink to={`details/:${props.idProduct}`}>
     <CardStyle>
       <img className="image" src={props.image} alt="" />
       <div className="info">
@@ -26,5 +28,6 @@ export function Card(props: CardProps) {
       <p className="price">R$ {props.price}0</p>
       </div>
     </CardStyle>
+    </CustomLink>
     )
 }
