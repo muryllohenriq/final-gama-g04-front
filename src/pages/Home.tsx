@@ -1,11 +1,23 @@
+import { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
-import { Card } from "../components/Card/Card";
+import { Card, CardProps } from "../components/Card/Card";
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
-import { Badge } from "../components/Badge/Badge";
 import { Category } from "../components/Category/Category";
+import api from "../services/api";
 import "./Home.css";
 
 function Navbar() {
+  const [productList, setProductList] = useState<CardProps[]>([]);
+
+  async function getProductData() {
+    const response = await api.get("products");
+    setProductList(response.data);
+  }
+
+  useEffect(() => {
+    getProductData();
+  }, []);
+
   return (
     <>
       <Header />
@@ -32,22 +44,88 @@ function Navbar() {
           </Button>
         </Nav>
       </NavbarBs>
-      <Container>
+      <Container className="styledCards">
         <Category nome="Bebidas" />
-        <Card />
-        <Card />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
         <Category nome="Entradas" />
-        <Card />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
         <Category nome="Saladas" />
-        <Card />
-        <Card />
-        <Card />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
         <Category nome="Hamburgueres" />
-        <Card />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
         <Category nome="Sobremesas" />
-        <Card />
+        {productList.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              idProduct={product.idProduct}
+              name={product.name}
+              isGlutenFree={product.isGlutenFree}
+              isVegan={product.isVegan}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+              image={product.image}
+            />
+          );
+        })}
       </Container>
-      
     </>
   );
 }
