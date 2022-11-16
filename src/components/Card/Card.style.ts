@@ -17,7 +17,7 @@ export const CardStyle = styled.section `
     padding-bottom: 4px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 150%;
   }
 
@@ -27,16 +27,19 @@ export const CardStyle = styled.section `
 
   .image {
     border-radius: 12px;
+    width: 116px;
+    height: 116px;
   }
 
   .badge-div {
-    padding-top: 16px;
     padding-right: 6px;
     display: flex;
     justify-content: flex-end;
+    height: 24px;
   }
 
   .info{
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -44,13 +47,19 @@ export const CardStyle = styled.section `
 
   .description {
     margin: 0;
-    padding-bottom: 15px;
     padding-right: 8px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
     color: #676767;
+    max-width: 170px;
+    max-height: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .price {
@@ -60,9 +69,8 @@ export const CardStyle = styled.section `
     color: #000000;
     text-align: end;
     padding-right: 8px;
+    margin: 0;
+    padding-top: 15px;
   }
 
-  &.details {
-    background: none;
-  }
 `
