@@ -1,23 +1,33 @@
 import { CardStyle } from "./Card.style";
+import { CustomLink } from "./Card.style";
 import {Badge} from "../Badge/Badge"
 
-type CardProps = {
-  cardClass?: string;
+export type CardProps = {
+  idProduct: number,
+  name: string,
+  description: string,
+  image: string,
+  price: number,
+  isVegan: boolean,
+  isGlutenFree: boolean,
+  category: number,
 }
 
 export function Card(props: CardProps) {
   return (
-    <CardStyle className={props.cardClass}>
-      <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
+    <CustomLink to={`details/:${props.idProduct}`}>
+    <CardStyle>
+      <img className="image" src={props.image} alt="" />
       <div className="info">
         <div className="badge-div">
-          <Badge id="1"/>
-          <Badge id="2"/>
+          {props.isGlutenFree ? <Badge id="2"/> : "" }
+          {props.isVegan ? <Badge id="1"/>: "" }
         </div>
-      <strong>Guioza de legumes</strong>
-      <p className="description">Texto de descrição. Texto de descrição. Texto de de...</p>
-      <p className="price">R$ 00,00</p>
+      <strong>{props.name}</strong>
+      <p className="description">{props.description}</p>
+      <p className="price">R$ {props.price}0</p>
       </div>
     </CardStyle>
+    </CustomLink>
     )
 }
