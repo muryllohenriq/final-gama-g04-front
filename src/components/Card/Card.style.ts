@@ -1,18 +1,15 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-export const CardStyle = styled.section `
-
-  background-color: #EDEDED;
+export const CardStyle = styled.section`
+  background-color: #ededed;
   width: 320px;
   height: 124px;
   border-radius: 16px;
   display: flex;
   align-items: center;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   margin-top: 4px;
-
-
 
   strong {
     padding-bottom: 4px;
@@ -40,7 +37,7 @@ export const CardStyle = styled.section `
     height: 24px;
   }
 
-  .info{
+  .info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -74,10 +71,8 @@ export const CardStyle = styled.section `
     margin: 0;
     padding-top: 15px;
   }
-`
+`;
 
-export const CustomLink = styled(Link) `
-text-decoration: none;
-`
-
-
+export const CustomLink = styled(Link)`
+  text-decoration: none;
+`;
