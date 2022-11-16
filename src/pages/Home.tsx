@@ -44,7 +44,7 @@ function Navbar() {
           </Button>
         </Nav>
       </NavbarBs>
-      <Container>
+      <Container className="styledCards">
         <Category nome="Bebidas" />
         {productList.map((product, index) => {
           return (
