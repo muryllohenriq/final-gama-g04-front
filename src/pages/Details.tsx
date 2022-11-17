@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import { CardDetails, CardProps } from "../components/Card/Details";
 import api from "../services/api";
 import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux/es/hooks/useDispatch";
+
 
 
 
