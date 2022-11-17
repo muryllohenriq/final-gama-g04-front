@@ -46,7 +46,7 @@ function Navbar() {
       </NavbarBs>
       <Container className="styledCards">
         <Category nome="Bebidas" />
-        {productList.map((product, index) => {
+        {productList.filter((product) => product.category === 1).map((product, index) => {
           return (
             <Card
               key={index}
@@ -62,7 +62,7 @@ function Navbar() {
           );
         })}
         <Category nome="Entradas" />
-        {productList.map((product, index) => {
+        {productList.filter((product) => product.category === 2).map((product, index) => {
           return (
             <Card
               key={index}
@@ -78,7 +78,7 @@ function Navbar() {
           );
         })}
         <Category nome="Saladas" />
-        {productList.map((product, index) => {
+        {productList.filter((product) => product.category === 3).map((product, index) => {
           return (
             <Card
               key={index}
@@ -94,7 +94,7 @@ function Navbar() {
           );
         })}
         <Category nome="Hamburgueres" />
-        {productList.map((product, index) => {
+        {productList.filter((product) => product.category === 4).map((product, index) => {
           return (
             <Card
               key={index}
@@ -110,7 +110,7 @@ function Navbar() {
           );
         })}
         <Category nome="Sobremesas" />
-        {productList.map((product, index) => {
+        {productList.filter((product) => product.category === 5).map((product, index) => {
           return (
             <Card
               key={index}
