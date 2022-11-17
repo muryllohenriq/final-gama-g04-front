@@ -32,7 +32,7 @@ export function Category(props: CategoryProps) {
       ? "Saladas"
       : props.id === 4
       ? "Hambúrgueres"
-      : ""}
+      : "Sobremesas"}
     </span>
    </CategoryHeader>
    {productList
