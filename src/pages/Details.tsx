@@ -27,7 +27,7 @@ function Details() {
     return (
         <>
             <Header hasGoBack/>            
-            <CardDetails idProduct={1} name={product.name} description={product.description} image={""} price={0} isVegan={product.isVegan} isGlutenFree={false} isEnough={2} category={0}/>
+            <CardDetails idProduct={1} name={product.name} description={product.description} image={""} price={0} isVegan={product.isVegan} isGlutenFree={product.isVegan} isEnough={2} category={0}/>
         </>
     )  
 }
