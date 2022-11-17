@@ -23,8 +23,8 @@ function Details() {
 
     return (
         <>
-            <Header hasGoBack/>            
-            <CardDetails idProduct={1} name={product.name} description={product.description} image={""} price={0} isVegan={product.isVegan} isGlutenFree={product.isGlutenFree} isEnough={2} category={0}/>
+            <Header hasGoBack/>
+            <CardDetails idProduct={1} name={product.name} description={product.description} image={""} price={product.price} isVegan={product.isVegan} isGlutenFree={product.isGlutenFree} isEnough={2} category={0}/>
         </>
     )
 };
