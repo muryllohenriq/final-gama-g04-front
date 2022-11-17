@@ -21,8 +21,8 @@ export function CardDetails(props: CardProps) {
           <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
           <div className="info">
             <div className="badges">
-            {props.isGlutenFree ? <Badge id="2" text="details"/> : ""}
-            {props.isVegan ? <Badge id="1" text="details"/> : ""}
+            {props.isGlutenFree ? <Badge id="2" text="Sem glúten"/> : ""}
+            {props.isVegan ? <Badge id="1" text="Vegano"/> : ""}
             </div>
             <div className="description">
               <p className="food-name">{props.name}</p>
