@@ -7,7 +7,10 @@ function Navbar() {
   return (
     <>
       <Header />
-      <NavbarBs>
+      <NavbarBs
+        style={{ marginTop: "63px", backgroundColor: "white", height: "60px" }}
+        fixed="top"
+      >
         <Nav className="styledNav">
           <Button variant="outline-light" id="styleButtons" href="#Bebidas">
             Bebidas

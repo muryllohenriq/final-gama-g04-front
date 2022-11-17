@@ -8,6 +8,8 @@ export const CategoryHeader = styled.header`
   font-size: 20px;
   line-height: 150%;
   margin-bottom: 16px;
+  padding-top: 126px;
+  margin-top: -110px;
 `;
 
 export const CategoryDiv = styled.div`

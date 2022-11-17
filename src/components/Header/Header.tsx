@@ -9,7 +9,7 @@ type HeaderProps = {
 
 function Header(props: HeaderProps) {
   return (
-    <Navbar className="navbarHeader">
+    <Navbar className="navbarHeader" sticky="top">
       {props.hasGoBack && (
         <Link className="btn-go-back" to="/">
           <FaChevronLeft color="white" />
