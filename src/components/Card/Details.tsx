@@ -28,14 +28,14 @@ export function CardDetails(props: CardProps) {
               <p className="food-name">{props.name}</p>
               <p className="people">
                 <img src={Icon} className="icon" alt="icone de pessoas"></img>
-                Serve {props.isEnough} {props.isEnough===1?"Pessoa": "Pessoas"}
+                Serve {props.isEnough} {props.isEnough===1?"Pessoa": "pessoas"}
               </p>
               <p className="text">
               {props.description}
               </p>
             </div>
             <p className="price">
-              {props.price}
+              R${props.price}
             </p>
           </div>
         </div>
