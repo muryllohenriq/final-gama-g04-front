@@ -34,7 +34,9 @@ export function CardDetails(props: CardProps) {
               {props.description}
               </p>
             </div>
-            <p className="price">R$ 00,00</p>
+            <p className="price">
+              {props.price}
+            </p>
           </div>
         </div>
       </DetailsStyle>
