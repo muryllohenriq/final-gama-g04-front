@@ -1,9 +1,6 @@
-import { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
-import { Card, CardProps } from "../components/Card/Card";
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { Category } from "../components/Category/Category";
-import api from "../services/api";
 import "./Home.css";
 
 function Navbar() {
