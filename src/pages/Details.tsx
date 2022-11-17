@@ -9,15 +9,14 @@ import { useDispatch } from "react-redux/es/hooks/useDispatch";
 
 function Details() {
 
-    const  {idProduct}  = useParams ();    
+    const  {id}  = useParams();    
        
 
-    const [product, setProduct] = useState<CardProps[]>([]);
+    const [product, setProduct] = useState<CardProps>({} as CardProps);
 
     async function getProductData() {
-      const {data} = await api.get(`products/${idProduct}`);
-      console.log(data);
-       
+      const {data} = await api.get(`products/${id}`);
+      setProduct(data);       
       
     }
   
@@ -28,7 +27,7 @@ function Details() {
     return (
         <>
             <Header hasGoBack/>            
-            <CardDetails idProduct={1} name={""} description={""} image={""} price={0} isVegan={false} isGlutenFree={false} isEnough={0} category={0}/>
+            <CardDetails idProduct={1} name={product.name} description={product.description} image={""} price={0} isVegan={false} isGlutenFree={false} isEnough={2} category={0}/>
         </>
     )  
 }

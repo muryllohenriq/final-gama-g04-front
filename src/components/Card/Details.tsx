@@ -28,7 +28,7 @@ export function CardDetails(props: CardProps) {
               <p className="food-name">{props.name}</p>
               <p className="people">
                 <img src={Icon} className="icon" alt="icone de pessoas"></img>
-                {props.isEnough}
+                Serve {props.isEnough} {props.isEnough===1?"Pessoa": "Pessoas"}
               </p>
               <p className="text">
               {props.description}
