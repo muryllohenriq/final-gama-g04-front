@@ -47,8 +47,8 @@ export const DetailsStyle = styled.section`
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 1.25rem;
+    margin-right: 2rem;
     width: 310px;
     height: 176px;
   }
