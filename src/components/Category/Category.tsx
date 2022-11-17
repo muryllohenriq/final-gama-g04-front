@@ -8,7 +8,7 @@ type CategoryProps = {
 export function Category(props: CategoryProps) {
   return (
     <CategoryHeader id={props.nome}>
-      <span> {props.nome}</span>
+      <span>{props.nome}</span>
     </CategoryHeader>
   );
 }
