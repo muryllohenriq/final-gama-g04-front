@@ -7,17 +7,6 @@ import api from "../services/api";
 import "./Home.css";
 
 function Navbar() {
-  const [productList, setProductList] = useState<CardProps[]>([]);
-
-  async function getProductData() {
-    const response = await api.get("products");
-    setProductList(response.data);
-  }
-
-  useEffect(() => {
-    getProductData();
-  }, []);
-
   return (
     <>
       <Header />
@@ -45,86 +34,11 @@ function Navbar() {
         </Nav>
       </NavbarBs>
       <Container className="styledCards">
-        <Category nome="Bebidas" />
-        {productList.filter((product) => product.category === 1).map((product, index) => {
-          return (
-            <Card
-              key={index}
-              idProduct={product.idProduct}
-              name={product.name}
-              isGlutenFree={product.isGlutenFree}
-              isVegan={product.isVegan}
-              category={product.category}
-              description={product.description}
-              price={product.price}
-              image={product.image}
-            />
-          );
-        })}
-        <Category nome="Entradas" />
-        {productList.filter((product) => product.category === 2).map((product, index) => {
-          return (
-            <Card
-              key={index}
-              idProduct={product.idProduct}
-              name={product.name}
-              isGlutenFree={product.isGlutenFree}
-              isVegan={product.isVegan}
-              category={product.category}
-              description={product.description}
-              price={product.price}
-              image={product.image}
-            />
-          );
-        })}
-        <Category nome="Saladas" />
-        {productList.filter((product) => product.category === 3).map((product, index) => {
-          return (
-            <Card
-              key={index}
-              idProduct={product.idProduct}
-              name={product.name}
-              isGlutenFree={product.isGlutenFree}
-              isVegan={product.isVegan}
-              category={product.category}
-              description={product.description}
-              price={product.price}
-              image={product.image}
-            />
-          );
-        })}
-        <Category nome="Hamburgueres" />
-        {productList.filter((product) => product.category === 4).map((product, index) => {
-          return (
-            <Card
-              key={index}
-              idProduct={product.idProduct}
-              name={product.name}
-              isGlutenFree={product.isGlutenFree}
-              isVegan={product.isVegan}
-              category={product.category}
-              description={product.description}
-              price={product.price}
-              image={product.image}
-            />
-          );
-        })}
-        <Category nome="Sobremesas" />
-        {productList.filter((product) => product.category === 5).map((product, index) => {
-          return (
-            <Card
-              key={index}
-              idProduct={product.idProduct}
-              name={product.name}
-              isGlutenFree={product.isGlutenFree}
-              isVegan={product.isVegan}
-              category={product.category}
-              description={product.description}
-              price={product.price}
-              image={product.image}
-            />
-          );
-        })}
+        <Category id={1} />
+        <Category id={2} />
+        <Category id={3} />
+        <Category id={4} />
+        <Category id={5} />
       </Container>
     </>
   );
