@@ -21,7 +21,10 @@ function Navbar() {
   return (
     <>
       <Header />
-      <NavbarBs style={{marginTop: '63px', backgroundColor: 'white', height: '60px'}} fixed="top">
+      <NavbarBs
+        style={{ marginTop: "63px", backgroundColor: "white", height: "60px" }}
+        fixed="top"
+      >
         <Nav className="styledNav">
           <Button variant="outline-light" id="styleButtons" href="#Bebidas">
             Bebidas
@@ -44,7 +47,7 @@ function Navbar() {
           </Button>
         </Nav>
       </NavbarBs>
-      <Container className="styledCards" style={{marginTop: '63px'}}>
+      <Container className="styledCards" style={{ marginTop: "63px" }}>
         <Category nome="Bebidas" />
         {productList.map((product, index) => {
           return (
