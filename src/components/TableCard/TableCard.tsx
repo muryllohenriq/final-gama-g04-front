@@ -1,11 +1,11 @@
 import { Table } from "./TableCard.style";
 
-type OrderProps = {
+export type OrderProps = {
   name: string;
   comment: string;
 }
 
-type TableCardProps = {
+export type TableCardProps = {
   id: number;
   idTable?: number;
   order?: Array<OrderProps>;

@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ControlStyle = styled.section`
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   .title{
     display: flex;
