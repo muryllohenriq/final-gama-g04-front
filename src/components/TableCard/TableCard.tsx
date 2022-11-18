@@ -1,7 +1,19 @@
+import { Table } from "./TableCard.style";
 
+type OrderProps = {
+  name: string;
+  comment: string;
+}
 
-export function TableCard() {
+type TableCardProps = {
+  id: number;
+  idTable?: number;
+  order?: Array<OrderProps>;
+}
+
+export function TableCard(props: TableCardProps) {
+  
   return(
-    <p></p>
+    <Table>Mesa {props.id}</Table>
   )
 }

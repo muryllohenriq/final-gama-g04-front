@@ -3,6 +3,7 @@ import { CardProps } from "react-bootstrap";
 import api from "../../services/api";
 import Header from "../Header/Header";
 import { ControlStyle } from "./Control.style";
+import { TableCard } from "../TableCard/TableCard";
 
 
 
@@ -22,7 +23,7 @@ export function Control() {
     <ControlStyle>
       <div className="title">
         <strong>Comanda</strong>
-        <p className="table-card">Mesa 10</p>
+        <TableCard id={10}/>
       </div>
     </ControlStyle>
     </>
