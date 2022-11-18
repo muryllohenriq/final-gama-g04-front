@@ -4,7 +4,7 @@ export const TotalDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 88%;
   height: auto;
   background: #DCDCDC;
   border-radius: 8px;

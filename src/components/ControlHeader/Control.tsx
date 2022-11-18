@@ -6,10 +6,12 @@ import { ControlStyle } from "./Control.style";
 import { TableCard } from "../TableCard/TableCard";
 import { TotalCard } from "../TotalCard/TotalCard";
 
+type ControlHeaderProps = {
+  name: string;
+}
 
 
-
-export function Control() {
+export function ControlHeader(props: ControlHeaderProps) {
 
   const [tables, setTables] = useState<TableCardProps[]>([]);
 
@@ -23,7 +25,7 @@ export function Control() {
     <Header />
     <ControlStyle>
       <div className="title">
-        <strong>Comanda</strong>
+        <strong>{props.name}</strong>
         <TableCard id={10}/>
       </div>
       <TotalCard />

@@ -10,7 +10,7 @@ export const ControlStyle = styled.section`
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    width: 95%;
+    width: 100%;
   }
 
   strong {
