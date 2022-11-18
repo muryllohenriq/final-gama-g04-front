@@ -5,6 +5,7 @@ import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { Category } from "../components/Category/Category";
 import api from "../services/api";
 import "./Home.css";
+import { MenuBottom } from "../components/MenuBottom/MenuBottom";
 
 function Navbar() {
   const [productList, setProductList] = useState<CardProps[]>([]);
@@ -126,6 +127,7 @@ function Navbar() {
           );
         })}
       </Container>
+      <MenuBottom />
     </>
   );
 }
