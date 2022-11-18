@@ -29,6 +29,10 @@ export function ControlHeader(props: ControlHeaderProps) {
         <TableCard id={10}/>
       </div>
       <TotalCard />
+      <div className="checkout">
+        <p className="checkout-text">Confira seu pedido abaixo antes de enviar</p>
+        <img src="/src/assets/arrow.svg" alt="" />
+      </div>
     </ControlStyle>
     </>
 
