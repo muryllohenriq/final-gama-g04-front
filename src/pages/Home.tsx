@@ -2,6 +2,7 @@ import Header from "../components/Header/Header";
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { Category } from "../components/Category/Category";
 import "./Home.css";
+import { MenuBottom } from "../components/MenuBottom/MenuBottom";
 
 function Navbar() {
   return (
@@ -40,6 +41,7 @@ function Navbar() {
         <Category id={4} />
         <Category id={5} />
       </Container>
+      <MenuBottom />
     </>
   );
 }
