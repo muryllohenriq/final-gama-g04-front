@@ -40,8 +40,8 @@ export const TotalDiv = styled.div`
     justify-content: center;
     background: #676767;
     border-radius: 8px;
-    padding: 10px 16px;
-    width: 150px;
+    padding: 10px 30px;
+    width: 190px;
     height: 48px;
   }
 
