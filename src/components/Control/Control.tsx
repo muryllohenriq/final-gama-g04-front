@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CardProps } from "react-bootstrap";
+import { CardProps, TableProps } from "react-bootstrap";
 import api from "../../services/api";
 import Header from "../Header/Header";
 import { ControlStyle } from "./Control.style";
@@ -10,7 +10,7 @@ import { TableCard } from "../TableCard/TableCard";
 
 export function Control() {
 
-  const [tables, setTables] = useState([]);
+  const [tables, setTables] = useState<TableProps[]>([]);
 
   async function getTables() {
     const response = await api.get("tables");
