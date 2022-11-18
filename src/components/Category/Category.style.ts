@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CategoryHeader = styled.header`
   border-bottom: 2px solid #ededed;
+  width: 90%;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -10,3 +11,7 @@ export const CategoryHeader = styled.header`
   padding-top: 126px;
   margin-top: -110px;
 `;
+
+export const CategoryDiv = styled.div`
+  padding-bottom: 10px;
+`

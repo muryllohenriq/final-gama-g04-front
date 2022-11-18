@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const BadgeStyle = styled.div`
 display: inline;
-margin-left: 4px;
 
 &.details {
   display: flex;
