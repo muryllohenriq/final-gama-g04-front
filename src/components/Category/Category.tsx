@@ -3,9 +3,10 @@ import { CategoryHeader, CategoryDiv } from "./Category.style";
 import { Card, CardProps } from "../Card/Card";
 import api from "../../services/api";
 
+const categoryTitle = ["", "Bebidas" , "Entradas", "Saladas", "Hamburgueres", "Sobremesas"]
+
 type CategoryProps = {
  id: number;
- nome?: string;
 };
 
 export function Category(props: CategoryProps) {
@@ -21,10 +22,11 @@ export function Category(props: CategoryProps) {
  }, []);
 
  return (
-  <CategoryDiv>
-   <CategoryHeader id={props.nome}>
+  <CategoryDiv id={categoryTitle[props.id]}>
+   <CategoryHeader>
     <span>
-     {props.id === 1
+      {categoryTitle[props.id]}
+     {/* {props.id === 1
       ? "Bebidas"
       : props.id === 2
       ? "Entradas"
@@ -32,20 +34,12 @@ export function Category(props: CategoryProps) {
       ? "Saladas"
       : props.id === 4
       ? "Hambúrgueres"
-      : "Sobremesas"}
+      : "Sobremesas"} */}
     </span>
    </CategoryHeader>
    {productList
     .filter((product) =>
-     props.id === 1
-      ? product.category === 1
-      : props.id === 2
-      ? product.category === 2
-      : props.id === 3
-      ? product.category === 3
-      : props.id === 4
-      ? product.category === 4
-      : product.category === 5
+     props.id === product.category
     )
     .map((product, index) => {
      return (
