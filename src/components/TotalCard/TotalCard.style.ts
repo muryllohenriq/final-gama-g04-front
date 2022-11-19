@@ -41,7 +41,7 @@ export const TotalDiv = styled.div`
     background: #676767;
     border-radius: 8px;
     padding: 10px 30px;
-    width: 190px;
+    max-width: 190px;
     height: 48px;
   }
 
