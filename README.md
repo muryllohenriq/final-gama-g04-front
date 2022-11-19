@@ -8,22 +8,21 @@ O app é um serviço de pedidos e comandas, que tem como público alvo clientes 
 git clone https://github.com/muryllohenriq/final-gama-g04-front.git
 cd final-gama-g04-front
 npm install
+npm run dev
 ```
 
 ## Deploy
 
-```text
-npm run dev
-```
+Acesse [aqui](http://www.site.com.br) o link do nosso projeto.
 
 ## Funcionalidades
 
 - Mobile First
 - Adicionar comanda
 - Produtos separados por categoria
-- Página de detalhes
+- Página de detalhes de cada item
 
-## Stack utilizada
+## Tecnologias utilizada
 
 - Vite
 - React
