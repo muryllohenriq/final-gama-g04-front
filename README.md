@@ -1,39 +1,34 @@
 # README Temporário
 
-## Combinados até o momento:
+O app é um serviço de pedidos e comandas, que tem como público alvo clientes de restaurantes e garçons, com o objetivo de agilizar os pedidos e facilitar o trabalho dos garçons, além de oferecer mais rapidez também para os clientes, já que não precisarão mais chamar o garçon para fazer os pedidos.
 
-- Padrão de branch: feature/nome-da-feature-em-ingles
+## Instalação
 
-- Padrão de commit: em inglês, primeira letra maiúscula, e verbo no gerúndio. Ex: 'Creating new feature'
-
-- Variáveis: camelCase
-- Classes: PascalCase
-- nome de arquivos utilizar ponto e não _ ou espaço, exemplo: metodo.metodo
-
-- O projeto será em MOBILE FIRST.
-
-- Convide um colaborador para revisar seu pull request.
-
-- Merge apenas quando existir um progresso e tudo estiver funcionando corretamente.
-
-- JAMAIS DAR PUSH DIRETO NA MAIN
-
-## Instalações até o momento: 
-```
-npm create vite@latest
+```text
+git clone https://github.com/muryllohenriq/final-gama-g04-front.git
+cd final-gama-g04-front
 npm install
-npm i react-router-dom bootstrap react-bootstrap
-npm i --save-dev @types/react-router-dom
-npm install axios
-npm install @reduxjs/toolkit react-redux
-npm install react-icons --save
-npm install --save styled-components
-npm i --save-dev @types/styled-components
 ```
 
-## Scripts criados no package.json:
+## Deploy
+
+```text
+npm run dev
 ```
 
-```
+## Funcionalidades
 
-## Lembretes:
+- Mobile First
+- Adicionar comanda
+- Produtos separados por categoria
+- Página de detalhes
+
+## Stack utilizada
+
+- Vite
+- React
+- React-router-dom
+- Redux
+- Bootstrap
+- Axios
+- Styled Components
