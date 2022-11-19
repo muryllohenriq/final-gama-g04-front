@@ -1,10 +1,10 @@
 import { ControlHeader } from "../components/ControlHeader/Control";
 import { MenuBottom } from "../components/MenuBottom/MenuBottom";
 
-export function Control() {
+export function Bill() {
   return(
     <>
-    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} />
+    <ControlHeader text="Fechar conta" name="Conta" />
     <MenuBottom />
     </>
   )

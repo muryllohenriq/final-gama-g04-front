@@ -1,6 +1,7 @@
 import { TotalDiv } from "./TotalCard.style";
+import { ControlHeaderProps } from "../ControlHeader/Control"
 
-export function TotalCard() {
+export function TotalCard(props: ControlHeaderProps) {
   return(
     <TotalDiv>
     <div className="total-price">
@@ -8,7 +9,7 @@ export function TotalCard() {
       <p className="price">R$ 00,00</p>
     </div>
     <div className="text">
-      <p className="button">Enviar pedido para cozinha</p>
+      <p className="button">{props.text}</p>
     </div>
     </TotalDiv>
   )
