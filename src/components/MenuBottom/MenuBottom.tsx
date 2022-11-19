@@ -10,11 +10,11 @@ export function MenuBottom() {
                     <GiNewspaper size='28px'/>
                     Cardápio
                 </BtnBottom>
-            <BtnBottom to="/">
+            <BtnBottom to="/control">
                 <img src={iconComanda} alt="" />
                 Comanda
             </BtnBottom>
-            <BtnBottom to="/">
+            <BtnBottom to="/bill">
             <img src={iconConta} alt="" />
                 Conta
             </BtnBottom>

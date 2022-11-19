@@ -6,8 +6,10 @@ import { ControlStyle } from "./Control.style";
 import { TableCard } from "../TableCard/TableCard";
 import { TotalCard } from "../TotalCard/TotalCard";
 
-type ControlHeaderProps = {
-  name: string;
+export type ControlHeaderProps = {
+  name?: string;
+  text: string;
+  show?: boolean;
 }
 
 
@@ -28,11 +30,14 @@ export function ControlHeader(props: ControlHeaderProps) {
         <strong>{props.name}</strong>
         <TableCard id={10}/>
       </div>
-      <TotalCard />
+      <TotalCard text={props.text}/>
+      {props.show? 
       <div className="checkout">
         <p className="checkout-text">Confira seu pedido abaixo antes de enviar</p>
         <img src="/src/assets/arrow.svg" alt="" />
       </div>
+      : ""
+      }
     </ControlStyle>
     </>
 
