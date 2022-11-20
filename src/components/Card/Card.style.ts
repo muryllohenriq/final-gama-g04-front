@@ -8,7 +8,7 @@ export const CardStyle = styled.section`
   border-radius: 16px;
   display: flex;
   align-items: center;
-  font-family: "Questrial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 4px;
 
   strong {
@@ -32,8 +32,8 @@ export const CardStyle = styled.section`
 
   .image {
     border-radius: 12px;
-    width: 116px;
-    height: 116px;
+    width: 112px;
+    height: 112px;
   }
 
   .badge-div {
@@ -53,7 +53,6 @@ export const CardStyle = styled.section`
   .description {
     margin: 0;
     padding-right: 8px;
-    margin-bottom: 15px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -77,8 +76,38 @@ export const CardStyle = styled.section`
     padding-right: 8px;
     margin: 0;
   }
+
+  .price-div {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: 15px;
+  }
 `;
 
 export const CustomLink = styled(Link)`
   text-decoration: none;
 `;
+
+export const CounterStyle = styled.div `
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #DCDCDC;
+  width: 80px;
+  border-radius: 8px;
+  height: 30px;
+  margin: -10px 5px 20px 0;
+
+
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #000000;
+  margin: 0;
+}
+`
