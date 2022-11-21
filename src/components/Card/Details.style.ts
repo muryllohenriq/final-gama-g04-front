@@ -48,7 +48,8 @@ export const DetailsStyle = styled.section`
     justify-content: center;
     margin-top: 1rem;
     margin-left: 20px;
-    margin-right: 20px;   
+    margin-right: 20px;
+    border-radius: 12px;  
     
     @media only screen and (min-width: 310px) { 
     width: 250px;
