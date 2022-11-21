@@ -1,7 +1,17 @@
 #styleButtons {
-  background: #a24c47;
-  border-radius: 8px;
-  color: white;
+  border-radius: 8px;   
+  color: #A24C47;
+  border-color: #A24C47;
+  background-color: #fff;  
+  cursor: pointer;
+}
+
+#styleButtons:hover {  
+  background-color: #A24C47;
+  color: #fff;
+  border-color: #fff;
+  transition: 300ms;
+  
 }
 
 .styledNav {
