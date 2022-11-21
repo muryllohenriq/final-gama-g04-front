@@ -14,7 +14,7 @@ export type CardProps = {
  isVegan: boolean;
  isGlutenFree: boolean;
  category: number;
- counter: boolean;
+ counter?: boolean;
 };
 
 export function Card(props: CardProps) {
