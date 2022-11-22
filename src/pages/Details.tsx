@@ -3,6 +3,8 @@ import Header from "../components/Header/Header";
 import { CardDetails, CardProps } from "../components/Card/Details";
 import api from "../services/api";
 import { useParams } from "react-router-dom";
+import { CheckBox } from "../components/checkboxDetails/CheckBox";
+
 
 function Details() {
   const { id } = useParams();
@@ -31,7 +33,8 @@ function Details() {
         isGlutenFree={product.isGlutenFree}
         isEnough={2}
         category={0}
-      />
+      />      
+      <CheckBox/>
     </>
   );
 }

@@ -18,7 +18,7 @@ export type CardProps = {
 export function CardDetails(props: CardProps) {
   return (
     <DetailsStyle>
-      <div className="container">
+      <div className="container" id="container">
         <img className="image" src={props.image} alt="imagens pratos" />
         <div className="info">
           <div className="badges">

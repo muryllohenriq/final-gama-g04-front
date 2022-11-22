@@ -11,19 +11,17 @@
   color: #fff;
   border-color: #fff;
   transition: 300ms;
-  
 }
 
 .styledNav {
   display: flex;
   overflow-x: scroll;
-  margin: 2% 0% 0% 2%;
+  margin: 2% 0% 0% 2%;  
 }
 
 ::-webkit-scrollbar {
   width: 0px;
 }
-
 .styledCards {
   display: flex;
   flex-direction: column;
