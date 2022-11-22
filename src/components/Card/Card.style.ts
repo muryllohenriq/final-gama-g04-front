@@ -19,6 +19,7 @@ export const CardStyle = styled.section`
     line-height: 90%;
     color: #000;
     height: 29px;
+    width: 98%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
