@@ -9,6 +9,10 @@ export const DetailsStyle = styled.section`
     border-radius: 16px;
     display: flex;
     margin-top: 4px;
+    @media only screen and (min-width:768px ){
+      margin-left: 40px;
+    }
+
   }
   .food-name {
     font-size: 24px;
@@ -100,6 +104,10 @@ export const DetailsStyle = styled.section`
     justify-content: flex-end;
     margin-top: 0.5rem;
     margin-right: 2.5rem;
+    @media only screen and (min-width:768px ){
+      margin-right: 12rem;
+    }
+
   }
   .price {
     font-size: 16px;
@@ -109,5 +117,7 @@ export const DetailsStyle = styled.section`
     justify-content: flex-end;
     margin-right: 2.5rem;
     padding-top: 0.75rem;
+    @media only screen and (min-width:768px ){
+      margin-right: 12rem;
   }
 `
