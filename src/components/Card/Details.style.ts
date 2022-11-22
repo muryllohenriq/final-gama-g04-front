@@ -94,4 +94,4 @@ export const DetailsStyle = styled.section`
   .obs {
     padding-top: 5px;
   }
-`;
+`

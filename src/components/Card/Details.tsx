@@ -49,5 +49,5 @@ export function CardDetails(props: CardProps) {
         </form>
         </div>
       </DetailsStyle>
-    );
-  }
+    )
+  };
