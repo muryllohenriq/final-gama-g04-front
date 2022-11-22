@@ -21,23 +21,32 @@ export function CardDetails(props: CardProps) {
           <img className="image" src="/src/assets/Rectangle 4.png" alt="" />
           <div className="info">
             <div className="badges">
-            {props.isGlutenFree ? <Badge id="2" text="Sem glúten"/> : ""}
-            {props.isVegan ? <Badge id="1" text="Vegano"/> : ""}
+              {props.isGlutenFree ? <Badge id="2" text="Sem glúten" /> : ""}
+              {props.isVegan ? <Badge id="1" text="Vegano" /> : ""}
             </div>
             <div className="description">
-              <p className="food-name">{props.name}</p>
+              <p className="food-name">
+                {props.name}
+              </p>
               <p className="people">
                 <img src={Icon} className="icon" alt="icone de pessoas"></img>
-                Serve {props.isEnough} {props.isEnough===1?"Pessoa": "pessoas"}
+                Serve {props.isEnough}{" "}{props.isEnough === 1 ? "Pessoa" : "pessoas"}
               </p>
-              <p className="text">
-              {props.description}
-              </p>
+              <p className="text">{props.description}</p>
             </div>
-            <p className="price">
-              R${props.price}
-            </p>
+            <p className="price">R${props.price}</p>
           </div>
+        </div>
+
+        <div className="ctn">
+        <form className="container-2" method="" action="" name="">
+          <div className="obs">
+            Alguma observação?
+            <textarea className="textarea">
+              Ex: Tirar a cebola, maionese à parte
+            </textarea>
+          </div>
+        </form>
         </div>
       </DetailsStyle>
     );
