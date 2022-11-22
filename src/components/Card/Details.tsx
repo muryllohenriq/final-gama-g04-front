@@ -34,7 +34,8 @@ export function CardDetails(props: CardProps) {
             </p>
             <p className="text">{props.description}</p>
           </div>
-          <p className="price">R${props.price}</p>
+          <p className="price">{props.price&&props.price.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</p>       
+
         </div>
       </div>
     </DetailsStyle>
