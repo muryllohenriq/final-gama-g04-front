@@ -9,6 +9,10 @@ export const DetailsStyle = styled.section`
     border-radius: 16px;
     display: flex;
     margin-top: 4px;
+    @media only screen and (min-width:768px ){
+      margin-left: 40px;
+    }
+
   }
   .food-name {
     font-size: 24px;
