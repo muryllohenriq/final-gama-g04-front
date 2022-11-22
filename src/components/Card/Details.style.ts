@@ -109,6 +109,7 @@ export const DetailsStyle = styled.section`
     }
 
   }
+
   .price {
     font-size: 16px;
     font-weight: 400;
@@ -120,4 +121,5 @@ export const DetailsStyle = styled.section`
     @media only screen and (min-width:768px ){
       margin-right: 12rem;
   }
+}
 `
