@@ -14,7 +14,6 @@ export const ControlStyle = styled.section`
   }
 
   strong {
-    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;

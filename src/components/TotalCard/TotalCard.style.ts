@@ -30,7 +30,6 @@ export const TotalDiv = styled.div`
 
   .total-price{
     padding: 15px;
-    font-family: 'Quicksand';
     padding: 10px 0px 11px 24px;
   }
 
