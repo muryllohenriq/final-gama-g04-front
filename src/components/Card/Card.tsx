@@ -33,7 +33,7 @@ export function Card(props: CardProps) {
      <p className="description">{props.description}</p>
     </CustomLink>
     <div className="price-div">
-     <p className="price">R$ {props.price}0</p>
+     <p className="price">R$ {props.price.toFixed(2)}</p>
      {props.counter ? <Counter /> : ""}
     </div>
    </div>

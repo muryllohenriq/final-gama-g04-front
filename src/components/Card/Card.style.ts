@@ -16,9 +16,9 @@ export const CardStyle = styled.section`
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 100%;
+    line-height: 90%;
     color: #000;
-    max-height: 30px;
+    height: 29px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -38,6 +38,7 @@ export const CardStyle = styled.section`
 
   .badge-div {
     padding-right: 6px;
+    padding-top: 2px;
     display: flex;
     justify-content: flex-end;
     height: 24px;
@@ -81,7 +82,7 @@ export const CardStyle = styled.section`
     display: flex;
     justify-content: space-between;
     height: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 `;
 
