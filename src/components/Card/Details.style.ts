@@ -124,7 +124,7 @@ export const DetailsStyle = styled.section`
   }
 }
 
-  .container-2 {
+  /* .container-2 {
     background-color: grey;
     border-radius: 0.5rem;
     width: 300px;
@@ -146,5 +146,5 @@ export const DetailsStyle = styled.section`
   }
   .obs {
     padding-top: 5px;
-  }
+  } */
   `

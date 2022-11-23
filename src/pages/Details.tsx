@@ -4,6 +4,7 @@ import { CardDetails, CardProps } from "../components/Card/Details";
 import api from "../services/api";
 import { useParams } from "react-router-dom";
 import { CheckBox } from "../components/checkboxDetails/CheckBox";
+import { Counter } from "../components/CounterButton/CounterButton";
 
 
 function Details() {
@@ -33,8 +34,9 @@ function Details() {
         isGlutenFree={product.isGlutenFree}
         isEnough={2}
         category={0}
-      />      
-      <CheckBox/>
+      /> 
+      <Counter name= "details"/>    
+      {/* <CheckBox/> */}
     </>
   );
 }
