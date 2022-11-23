@@ -2,6 +2,8 @@ import { DetailsStyle } from "./Details.style";
 import { Badge } from "../Badge/Badge";
 import Icon from "../../assets/icon-people.png";
 import { FaProductHunt } from "react-icons/fa";
+import { TotalCard } from "../TotalCard/TotalCard";
+
 
 export type CardProps = {
   idProduct: number;
@@ -73,9 +75,9 @@ export function CardDetails(props: CardProps) {
             <p className="text">{props.description}</p>
           </div>
           <p className="price">{props.price&&props.price.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</p>       
-
         </div>
       </div>
+      <TotalCard show text="Adicionar à comanda" name="details"/>
     </DetailsStyle>
   );
 }

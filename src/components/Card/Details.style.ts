@@ -6,7 +6,7 @@ export const DetailsStyle = styled.section`
     background: none;
     flex-direction: column;
     width: 100%;
-    height: 150px;
+    height: auto;
     border-radius: 16px;
     display: flex;
     margin-top: 4px;
