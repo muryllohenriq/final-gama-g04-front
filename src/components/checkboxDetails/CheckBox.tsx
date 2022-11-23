@@ -5,14 +5,14 @@ export function CheckBox (){
     return (
     
         <>
-        {/* <CheckBoxStyle> */}
-        {/* <div className="card" style={{width: "320px", height: "132px", display:"flex", justifyContent: "center", alignItems: "center"}}>
+        {/* <CheckBoxStyle>  */}
+         <div className="card" style={{width: "320px", height: "132px", display:"flex", justifyContent: "center", alignItems: "center"}}>
             <div className="card-body">
             <h5 className="card-title">Alguma observação?</h5>
             <label htmlFor="placeholder" style={{boxShadow: "2px 2px 15px 0px #1D1C1C12", borderRadius: "5px", height: "50px", width:"272px"}}>Ex: Tirar a cebola, maionese à parte, ponto da carne etc
 </label>            
             </div>
-            </div> */}
+            </div>
             
         <div className="dropdown" style={{ marginTop: "12rem", marginBottom:"10rem", flexDirection:"column",alignItems: "center", justifyContent: "center", textAlign: "center" }}>
             <button style={{ background:"#fff", color: "black", marginTop: "12rem", margin:"auto", padding:"10px", flexDirection:"column", alignItems: "center", justifyContent: "center"}} className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +44,7 @@ export function CheckBox (){
             </div>
             </button>
         </div>
-        {/* </CheckBoxStyle>                        */}
+         {/* </CheckBoxStyle>                         */}
         </>     
   )
 }

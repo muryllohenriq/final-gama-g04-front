@@ -21,4 +21,10 @@ p {
   color: #000000;
   margin: 0;
 }
+
+&.details{
+
+  height: 48px;
+  width: 80px;  
+}
 `
