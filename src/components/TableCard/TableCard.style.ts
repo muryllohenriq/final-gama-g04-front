@@ -9,7 +9,6 @@ export const Table = styled.p`
   height: 26px;
   background: #DCDCDC;
   border-radius: 20px;
-  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
