@@ -23,8 +23,9 @@ p {
 }
 
 &.details{
-
+  width: 100px;
   height: 48px;
-  width: 80px;  
+  background-color: #DCDCDC;
+  margin: 0 0 0 5px;
 }
 `
