@@ -10,6 +10,10 @@ export const DetailsStyle = styled.section`
     border-radius: 16px;
     display: flex;
     margin-top: 4px;
+    @media only screen and (min-width:768px ){
+      margin-left: 40px;
+    }
+
   }
   .food-name {
     font-size: 24px;
@@ -45,14 +49,54 @@ export const DetailsStyle = styled.section`
     width: 75%;
   }
   .image {
-    display: flex;
-    justify-content: flex-end;
+    display: flex;    
+    justify-content: center;
     margin-top: 1rem;
-    margin-left: 1.25rem;
-    margin-right: 2rem;
-    width: 310px;
-    height: 176px;
-  }
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 12px;  
+    
+    @media only screen and (min-width: 310px) { 
+    width: 250px;
+    height: 156px;
+    margin-left: 1.5rem;
+    }   
+
+    @media only screen and (min-width:360px ) {
+      width: 270px;
+      height: 176px;
+      margin-left: 2rem;
+    }
+
+    @media only screen and (min-width:375px ) {
+      width: 290px;
+      height: 186px
+    }
+
+    @media only screen and (min-width:390px ) {
+      width: 300px;
+      height: 196px
+    }
+
+    @media only screen and (min-width:412px ) {
+      width: 320px;
+      height: 206px
+    }
+
+    @media only screen and (min-width:428px ) {
+      width: 340px;
+      height: 216px
+    }
+
+    @media only screen and (min-width:768px ) {
+      width: 450px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6rem;
+    }
+  } 
+   
   .badges {
     font-size: 12px;
     font-weight: 500;
@@ -61,7 +105,12 @@ export const DetailsStyle = styled.section`
     justify-content: flex-end;
     margin-top: 0.5rem;
     margin-right: 2.5rem;
+    @media only screen and (min-width:768px ){
+      margin-right: 12rem;
+    }
+
   }
+
   .price {
     font-size: 16px;
     font-weight: 400;
@@ -70,7 +119,10 @@ export const DetailsStyle = styled.section`
     justify-content: flex-end;
     margin-right: 2.5rem;
     padding-top: 0.75rem;
+    @media only screen and (min-width:768px ){
+      margin-right: 12rem;
   }
+
   .container-2 {
     background-color: grey;
     border-radius: 0.5rem;
@@ -95,3 +147,6 @@ export const DetailsStyle = styled.section`
     padding-top: 5px;
   }
 `
+}
+`
+

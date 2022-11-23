@@ -1,14 +1,61 @@
-import { ReactNode } from "react";
-import { CategoryHeader } from "./Category.style";
+import { useState, useEffect } from "react";
+import { CategoryHeader, CategoryDiv } from "./Category.style";
+import { Card, CardProps } from "../Card/Card";
+import api from "../../services/api";
+
+const categoryTitle = ["", "Bebidas" , "Entradas", "Saladas", "Hamburgueres", "Sobremesas"]
 
 type CategoryProps = {
-  nome: string;
+ id: number;
 };
 
 export function Category(props: CategoryProps) {
-  return (
-    <CategoryHeader id={props.nome}>
-      <span> {props.nome}</span> 
-    </CategoryHeader>
-  );
+ const [productList, setProductList] = useState<CardProps[]>([]);
+
+ async function getProductData() {
+  const response = await api.get("products");
+  setProductList(response.data);
+ }
+
+ useEffect(() => {
+  getProductData();
+ }, []);
+
+ return (
+  <CategoryDiv id={categoryTitle[props.id]}>
+   <CategoryHeader>
+    <span>
+      {categoryTitle[props.id]}
+     {/* {props.id === 1
+      ? "Bebidas"
+      : props.id === 2
+      ? "Entradas"
+      : props.id === 3
+      ? "Saladas"
+      : props.id === 4
+      ? "Hambúrgueres"
+      : "Sobremesas"} */}
+    </span>
+   </CategoryHeader>
+   {productList
+    .filter((product) =>
+     props.id === product.category
+    )
+    .map((product, index) => {
+     return (
+      <Card
+       key={index}
+       idProduct={product.idProduct}
+       name={product.name}
+       isGlutenFree={product.isGlutenFree}
+       isVegan={product.isVegan}
+       category={product.category}
+       description={product.description}
+       price={product.price}
+       image={product.image}
+      />
+     );
+    })}
+  </CategoryDiv>
+ );
 }

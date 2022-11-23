@@ -12,12 +12,18 @@ export const CardStyle = styled.section`
   margin-top: 4px;
 
   strong {
-    padding-bottom: 4px;
+    margin-bottom: 8px;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 150%;
+    line-height: 100%;
     color: #000;
+    max-height: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   img {
@@ -47,6 +53,7 @@ export const CardStyle = styled.section`
   .description {
     margin: 0;
     padding-right: 8px;
+    margin-bottom: 15px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -66,10 +73,9 @@ export const CardStyle = styled.section`
     font-size: 16px;
     line-height: 110%;
     color: #000000;
-    text-align: end;
+    text-align: start;
     padding-right: 8px;
     margin: 0;
-    padding-top: 15px;
   }
 `;
 
