@@ -1,9 +1,7 @@
-import { useState } from "react";
-import { CardStyle, CounterStyle } from "./Card.style";
+import { CardStyle } from "./Card.style";
 import { CustomLink } from "./Card.style";
 import { Badge } from "../Badge/Badge";
-import { GrFormAdd, GrFormSubtract } from "react-icons/gr";
-import { HiOutlineTrash } from "react-icons/hi";
+import { Counter } from "../CounterButton/CounterButton";
 
 export type CardProps = {
  idProduct: number;
@@ -38,23 +36,5 @@ export function Card(props: CardProps) {
     </div>
    </div>
   </CardStyle>
- );
-}
-
-function Counter() {
- const [count, setCount] = useState(1);
-
- return (
-  <CounterStyle>
-   {count === 1 ? (
-    <HiOutlineTrash
-     onClick={() => setCount((count) => count - 1)}
-    ></HiOutlineTrash>
-   ) : (
-    <GrFormSubtract onClick={() => setCount((count) => count - 1)} />
-   )}
-   <p>{count}</p>
-   <GrFormAdd onClick={() => setCount((count) => count + 1)}></GrFormAdd>
-  </CounterStyle>
  );
 }
