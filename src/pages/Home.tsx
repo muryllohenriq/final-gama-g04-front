@@ -9,7 +9,8 @@ function Navbar() {
     <>
       <Header />
       <NavbarBs
-        style={{ marginTop: "63px", backgroundColor: "white", height: "60px" }}
+        style={{ marginTop: "63px", backgroundColor: "white", height: "60px", marginLeft:"70px"
+      }}
         fixed="top"
       >
         <Nav className="styledNav">
