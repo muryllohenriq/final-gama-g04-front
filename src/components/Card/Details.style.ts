@@ -122,6 +122,7 @@ export const DetailsStyle = styled.section`
     @media only screen and (min-width:768px ){
       margin-right: 12rem;
   }
+}
 
   .container-2 {
     background-color: grey;
@@ -146,7 +147,4 @@ export const DetailsStyle = styled.section`
   .obs {
     padding-top: 5px;
   }
-`
-}
-`
-
+  `
