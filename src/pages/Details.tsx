@@ -6,10 +6,11 @@ import { useParams } from "react-router-dom";
 import { CheckBox } from "../components/checkboxDetails/CheckBox";
 
 
-function Details() {
+export function Details() {
   const { id } = useParams();
-
   const [product, setProduct] = useState<CardProps>({} as CardProps);
+
+  
 
   async function getProductData() {
     const { data } = await api.get(`products/${id}`);

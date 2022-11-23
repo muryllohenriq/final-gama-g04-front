@@ -3,12 +3,14 @@ import { CounterStyle } from "./Counter.style";
 import { GrFormAdd, GrFormSubtract } from "react-icons/gr";
 import { HiOutlineTrash } from "react-icons/hi";
 
+
 type CounterProps = {
   name?: string;
 }
 
 export function Counter(props:CounterProps) {
   const [count, setCount] = useState(1);
+ 
  
   return (
    <CounterStyle className= {props.name}>

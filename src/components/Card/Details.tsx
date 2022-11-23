@@ -5,6 +5,7 @@ import { FaProductHunt } from "react-icons/fa";
 import { TotalCard } from "../TotalCard/TotalCard";
 
 
+
 export type CardProps = {
   idProduct: number;
   name: string;
@@ -17,7 +18,9 @@ export type CardProps = {
   category: number;
 };
 
-export function CardDetails(props: CardProps) {
+
+export function CardDetails(props: CardProps) {  
+ 
 
   //   return (
   //     <DetailsStyle>
