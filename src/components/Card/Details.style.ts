@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import api from './../../services/api';
 
 export const DetailsStyle = styled.section`
   .info {
@@ -20,7 +21,7 @@ export const DetailsStyle = styled.section`
     margin-top: 0.25rem;
     margin-bottom: 0rem;
     margin-left: 2.5rem;
-    width: 100%
+    width: 100%;
   }
   .icon {
     width: 18px;
@@ -121,5 +122,31 @@ export const DetailsStyle = styled.section`
     @media only screen and (min-width:768px ){
       margin-right: 12rem;
   }
+
+  .container-2 {
+    background-color: grey;
+    border-radius: 0.5rem;
+    width: 300px;
+    display: flex;
+    justify-items: center;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-top: 10px;
+    position: relative;
+    flex-direction: column890 gh-reverse;
+  }
+  .ctn {
+    margin-left: 3rem;
+  }
+  .textarea {
+    background-color: white;
+    padding: 1px 10px;
+    margin-top: 1rem;
+  }
+  .obs {
+    padding-top: 5px;
+  }
+`
 }
 `
+
