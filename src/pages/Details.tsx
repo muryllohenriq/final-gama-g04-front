@@ -3,11 +3,12 @@ import Header from "../components/Header/Header";
 import { CardDetails, CardProps } from "../components/Card/Details";
 import api from "../services/api";
 import { useParams } from "react-router-dom";
-import { CheckBox } from "../components/checkboxDetails/CheckBox";
+import { useSelector, useDispatch } from 'react-redux';
 
 
 export function Details() {
   const { id } = useParams();
+  // const [useSelector, useDispatch] = ();
   const [product, setProduct] = useState<CardProps>({} as CardProps);
 
   
@@ -35,7 +36,7 @@ export function Details() {
         isEnough={2}
         category={0}
       /> 
-      {/* <CheckBox/> */}
+      
     </>
   );
 }

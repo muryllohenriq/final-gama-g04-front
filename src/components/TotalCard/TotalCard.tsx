@@ -5,33 +5,37 @@ import { useParams } from "react-router-dom";
 import { TotalDiv } from "./TotalCard.style";
 import { ControlHeaderProps } from "../ControlHeader/Control"
 import { Counter } from "../CounterButton/CounterButton";
-import store from '../../redux/storeSlice';
 import { useEffect, useState } from 'react';
 import api from "../../services/api";
 import { CardProps } from "../Card/Details";
 
-export function TotalCard(props: ControlHeaderProps) {
+
+export type TotalCardProps  = ControlHeaderProps&{
+  onClick?: () => void
+}
+
+
+export function TotalCard(props:TotalCardProps) {
+  
+
+  const totalCard = useSelector((state:StoreState) => state.store);
   const { id } = useParams();
+
   const dispatch = useDispatch();
   const [product, setProduct] = useState<CardProps>({} as CardProps);
   const produtosAdicionados = useSelector(
     (state: StoreState) => state.store
   );
 
-function handleClickAdd() {
-  dispatch(add(id));  
-  
-}
 
-async function getProductData() {
-  const { data } = await api.get(`products/${id}`);
-  setProduct(data);  
-}
+// async function getProductData() {
+//   const { data } = await api.get(`products/${id}`);
+//   setProduct(data);  
+// }
 
-
-useEffect(() => {
-  getProductData();
-});
+// useEffect(() => {
+//   getProductData();
+// });
   
 
   return(
@@ -44,11 +48,11 @@ useEffect(() => {
       </>
     }
     </div>
-    {produtosAdicionados.find(product: Number => Number(product) === Number(id))}
+    {/* {produtosAdicionados.find(product: Number => Number(product) === Number(id))} */}
     {props.name === "details" ? 
     <div className={`textbutton ${props.name}`}>
-      <p className={`button ${props.name}`}>Adicionar à comanda</p>
-      <p className="price-add">R$00,00</p>
+      <p onClick={props.onClick} className={`button ${props.name}`}>Adicionar à comanda</p>
+      <p className="price-add"></p>
     </div> : 
     <div className="textbutton">
       <p className="button">{props.text}</p>

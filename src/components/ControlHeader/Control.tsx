@@ -33,7 +33,7 @@ export function ControlHeader(props: ControlHeaderProps) {
       <TotalCard text={props.text}/>
       {props.show? 
       <div className="checkout">
-        <p className="checkout-text">Confira seu pedido abaixo antes de enviar</p>
+        <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>
         <img src="/src/assets/arrow.svg" alt="" />
       </div>
       : ""

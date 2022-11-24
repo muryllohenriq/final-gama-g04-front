@@ -120,31 +120,36 @@ export const DetailsStyle = styled.section`
     margin-right: 2.5rem;
     padding-top: 0.75rem;
     @media only screen and (min-width:768px ){
-      margin-right: 12rem;
-  }
+      margin-right: 12rem; }
 }
 
-  /* .container-2 {
-    background-color: grey;
-    border-radius: 0.5rem;
-    width: 300px;
+  .container-2 {
+    background: #ffff;
+    box-shadow: 15px 15px 15px rgba(29, 28, 28, 0.07);
+    border-radius: 8px;     
+    width: 320px;
+    height: 132px;
+    margin-right: 10px;
     display: flex;
-    justify-items: center;
-    padding-bottom: 10px;
-    padding-left: 45px;
-    padding-top: 10px;
+    justify-items: center;   
     position: relative;
     flex-direction: column890 gh-reverse;
   }
   .ctn {
-    margin-left: 3rem;
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
   }
   .textarea {
-    background-color: white;
+    color: #676767;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    width: 280px;
+    height: 60px;
     padding: 1px 10px;
     margin-top: 1rem;
   }
   .obs {
     padding-top: 5px;
-  } */
+    max-width: 200px;  
+  }
   `
