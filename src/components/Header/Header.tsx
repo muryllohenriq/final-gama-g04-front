@@ -8,6 +8,7 @@ import "./Header.style.css";
 type HeaderProps = {
   hasGoBack?: boolean;
   hasSearch?: boolean;
+  hasOrdered?: boolean;
 };
 
 function Header(props: HeaderProps) {
@@ -20,7 +21,10 @@ function Header(props: HeaderProps) {
           <FaChevronLeft color="white" />
         </Link>
       )}
-      <div className={`box-logo ${props.hasGoBack ? "logo-margin-right" : ""} ${props.hasSearch ? "logo-margin-left" : ""}`}>
+      {props.hasOrdered && (
+        <span style={{ fontWeight: "600", color: "white", paddingLeft: "107px" }} >X pedidos</span>
+      )}
+      <div className={`box-logo ${props.hasGoBack ? "logo-margin-right" : ""} ${props.hasSearch ? "logo-margin-left" : ""} ${props.hasOrdered ? "logo-margin-right-kitchen" : ""}`}>
         <div
           className="logo"
           style={{

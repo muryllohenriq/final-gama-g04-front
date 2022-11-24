@@ -4,6 +4,7 @@ import Details from "../pages/Details";
 import { Control } from "../pages/Control";
 import { Bill } from "../pages/Bill";
 import  { Search }  from "../pages/Search";
+import  { Kitchen }  from "../pages/Kitchen";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/search',
     element: <Search />
+  },
+  {
+    path: '/kitchen',
+    element: <Kitchen />
   }
 ]);
 
