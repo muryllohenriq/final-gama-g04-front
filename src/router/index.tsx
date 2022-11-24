@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Details from "../pages/Details";
 import { Control } from "../pages/Control";
 import { Bill } from "../pages/Bill";
+import  { Search }  from "../pages/Search";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/bill',
     element: <Bill />
+  },
+  {
+    path: '/search',
+    element: <Search />
   }
 ]);
 

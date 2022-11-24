@@ -18,11 +18,11 @@ export type CardProps = {
 export function Card(props: CardProps) {
  return (
   <CardStyle>
-   <CustomLink to={`details/${props.idProduct}`}>
+   <CustomLink to={`/details/${props.idProduct}`}>
     <img className="image" src={props.image} alt="" />
    </CustomLink>
    <div className="info">
-    <CustomLink to={`details/${props.idProduct}`}>
+    <CustomLink to={`/details/${props.idProduct}`}>
      <div className="badge-div">
       {props.isGlutenFree ? <Badge id="2" /> : ""}
       {props.isVegan ? <Badge id="1" /> : ""}
