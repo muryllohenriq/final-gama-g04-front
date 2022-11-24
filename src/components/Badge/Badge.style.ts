@@ -16,7 +16,7 @@ display: inline;
   & div {
     display: flex;
     align-items: center;
-    padding: 4px 8px;
+    padding: 2px 8px;
     width: auto;
     height: 30px;
     border-radius: 20px;
