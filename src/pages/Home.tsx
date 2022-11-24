@@ -7,7 +7,7 @@ import { MenuBottom } from "../components/MenuBottom/MenuBottom";
 function Navbar() {
   return (
     <>
-      <Header />
+      <Header hasSearch/>
       <NavbarBs
         style={{ marginTop: "63px", backgroundColor: "white", height: "60px" }}
         fixed="top"

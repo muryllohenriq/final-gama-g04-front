@@ -15,7 +15,7 @@ export type CardProps = {
 
 export function Card(props: CardProps) {
   return (
-    <CustomLink to={`details/${props.idProduct}`}>
+    <CustomLink to={`/details/${props.idProduct}`}>
       <CardStyle>
         <img className="image" src={props.image} alt="" />
         <div className="info">
