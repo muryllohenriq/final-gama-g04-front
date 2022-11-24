@@ -35,7 +35,7 @@ function Navbar() {
           </Button>
         </Nav>
       </NavbarBs>
-      <Container className="styledCards">
+      <Container style={{ paddingBottom: "80px"}} className="styledCards">
         <Category id={1} />
         <Category id={2} />
         <Category id={3} />

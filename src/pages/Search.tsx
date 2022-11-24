@@ -37,7 +37,7 @@ export function Search() {
                         onChange={(event) => setSearchedText(event.target.value)} />
                 </InputContainer>
             </NavbarBs>
-            <div style={{ marginTop: "112px" }}>
+            <div style={{ marginTop: "112px", paddingBottom: "80px" }}>
                 {productList.filter((product) => product.name.toLowerCase().includes(searchedText.toLocaleLowerCase()))
                     .map((product, index) => {
                         return (
