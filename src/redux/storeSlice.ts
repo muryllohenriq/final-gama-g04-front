@@ -23,13 +23,13 @@ export const store = createSlice({
 
       if (indexTable >= 0) {
         const indexOrder = state[indexTable].order.findIndex(
-          (item) => Number(item.idProduct) === Number(action.payload.idTable)
+          (item) => Number(item.idProduct) === Number(action.payload.idProduct)
         );
 
         if (indexOrder >= 0) {
           state[indexTable].order[indexOrder].comment = action.payload.comment;
           state[indexTable].order[indexOrder].amount =
-            state[indexTable].order[indexOrder].amount + action.payload.amount;
+          state[indexTable].order[indexOrder].amount + action.payload.amount;
         } else {
           const data = {
             idProduct: action.payload.idProduct,
@@ -53,12 +53,7 @@ export const store = createSlice({
 
         state.push(data);
       } 
-      },
-      remove:(state, action) =>{
-        const indexTable = state.findIndex(
-            (item) => Number(item.idTable) === Number(action.payload.idTable)
-          );
-    },
+      },     
   },
 });
 

@@ -9,7 +9,7 @@ function Navbar() {
     <>
       <Header hasSearch/>
       <NavbarBs
-        style={{ marginTop: "63px", backgroundColor: "white", height: "60px", marginLeft:"70px"
+        style={{ marginTop: "63px", backgroundColor: "#FCFCFC", height: "60px"
       }}
         fixed="top"
       >
