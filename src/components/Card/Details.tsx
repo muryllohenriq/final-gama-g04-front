@@ -2,6 +2,11 @@ import { DetailsStyle } from "./Details.style";
 import { Badge } from "../Badge/Badge";
 import Icon from "../../assets/icon-people.png";
 import { TotalCard } from "../TotalCard/TotalCard";
+import {  useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { add } from "../../redux/storeSlice";
+import { useState } from "react";
+
 
 
 
@@ -15,12 +20,14 @@ export type CardProps = {
   isGlutenFree: boolean;
   isEnough: number;
   category: number;
-
 }
-
- export function CardDetails(props: CardProps) { 
-  function handleClick (){
-    console.log("click");
+export function CardDetails(props: CardProps) { 
+const { id } = useParams();
+const dispatch = useDispatch();
+const  [comment, setComment] = useState("")
+ 
+  function handleClick (Counter:number){
+   dispatch(add({idTable: 10, idProduct: Number(id), comment, amount: Counter}))
     
   }
   return (
@@ -40,21 +47,18 @@ export type CardProps = {
               {props.isEnough === 1 ? "Pessoa" : "pessoas"}
             </p>
             <p className="text">{props.description}</p>
-          </div>
-          <p className="price">{props.price&&props.price.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</p>       
+          </div>      
         </div>
       </div>
       <div className="ctn">
         <form className="container-2" method="" action="submit" name="">
           <div className="obs">
            <strong>Alguma observação?</strong>
-            <textarea className="textarea">              
-              Ex: Tirar a cebola, maionese à parte
-            </textarea>
+            <textarea className="textarea" placeholder="Ex: Tirar a cebola, maionese à parte"/>                      
           </div>
         </form>
         </div>
-      <TotalCard show text="Adicionar à comanda" onClick={handleClick} name="details"/>
+      <TotalCard show text="Adicionar à comanda" onClick={handleClick} name="details" price={props.price} tableId={0} idProduct={0}/>
     </DetailsStyle>
   );
 }

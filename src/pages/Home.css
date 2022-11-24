@@ -8,15 +8,16 @@
 
 #styleButtons:hover {  
   background-color: #A24C47;
-  color: #fff;
-  border-color: #fff;
+  color: #FCFCFC;
+  border-color: #fcfcfc;
   transition: 300ms;
 }
 
 .styledNav {
   display: flex;
   overflow-x: scroll;
-  margin: 2% 0% 0% 2%;  
+  margin: 2% 0% 0% 2%; 
+  background-color: #fcfcfc; 
 }
 
 ::-webkit-scrollbar {

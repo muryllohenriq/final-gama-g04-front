@@ -6,6 +6,7 @@ import { HiOutlineTrash } from "react-icons/hi";
 
 type CounterProps = {
   name?: string;
+  price?:number;
 }
 
 export function Counter(props:CounterProps) {
@@ -20,9 +21,9 @@ export function Counter(props:CounterProps) {
      ></HiOutlineTrash>
     ) : (
      <GrFormSubtract onClick={() => setCount((count) => count - 1)} />
-    )}
+    )}  
     <p>{count}</p>
-    <GrFormAdd onClick={() => setCount((count) => count + 1)}></GrFormAdd>
+    <GrFormAdd onClick={() =>  setCount((count) => count + 1)}></GrFormAdd>
    </CounterStyle>
   );
  }

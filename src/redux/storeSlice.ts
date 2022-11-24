@@ -23,7 +23,7 @@ export const store = createSlice({
 
       if (indexTable >= 0) {
         const indexOrder = state[indexTable].order.findIndex(
-          (item) => Number(item.idProduct) === Number(action.payload.idTable)
+          (item) => Number(item.idProduct) === Number(action.payload.idProduct)
         );
 
         if (indexOrder >= 0) {

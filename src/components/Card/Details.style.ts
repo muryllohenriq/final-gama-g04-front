@@ -143,7 +143,7 @@ export const DetailsStyle = styled.section`
     color: #676767;
     border: 1px solid #dadada;
     border-radius: 5px;
-    width: 280px;
+    width: 270px;
     height: 60px;
     padding: 1px 10px;
     margin-top: 1rem;

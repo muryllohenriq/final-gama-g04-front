@@ -1,14 +1,21 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
-import { CardDetails, CardProps } from "../components/Card/Details";
+import { CardDetails, CardProps } from '../components/Card/Details';
 import api from "../services/api";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
+import { StoreState } from "../redux";
+import { TotalCard } from '../components/TotalCard/TotalCard';
+import { add } from "../redux/storeSlice";
 
 
 export function Details() {
   const { id } = useParams();
-  // const [useSelector, useDispatch] = ();
+  const dispatch = useDispatch(
+    
+  );
+  const TotalCard = useSelector(
+    (state: StoreState) => state.store);  
   const [product, setProduct] = useState<CardProps>({} as CardProps);
 
   
@@ -34,7 +41,7 @@ export function Details() {
         isVegan={product.isVegan}
         isGlutenFree={product.isGlutenFree}
         isEnough={2}
-        category={0}
+        category={0}        
       /> 
       
     </>
