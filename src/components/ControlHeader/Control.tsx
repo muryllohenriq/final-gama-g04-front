@@ -41,7 +41,7 @@ export function ControlHeader(props: ControlHeaderProps) {
         <TableCard id={props.tableId}/>
       </div>
       <TotalCard text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct}/>
-      {props.show? 
+      {props.show && 
       <div className="checkout">
         <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>
         <img src="/src/assets/arrow.svg" alt="" />
