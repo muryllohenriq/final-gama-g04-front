@@ -6,6 +6,7 @@ import { ControlStyle } from "./Control.style";
 import { TableCard } from "../TableCard/TableCard";
 import { TotalCard } from "../TotalCard/TotalCard";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 export type ControlHeaderProps = {
   name?: string;
@@ -19,7 +20,9 @@ export type ControlHeaderProps = {
 
 export function ControlHeader(props: ControlHeaderProps) {
   const { id } = useParams();
+  const  dispatch = useDispatch();
   const [tables, setTables] = useState<TableCardProps[]>([]);
+
 
   async function getTables() {
     const {data} = await api.get("tables");
@@ -37,7 +40,9 @@ export function ControlHeader(props: ControlHeaderProps) {
         <strong>{props.name}</strong>
         <TableCard id={props.tableId}/>
       </div>
-      <TotalCard text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct}/>
+      <TotalCard text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct} onClick={function (Counter: number): void {
+          throw new Error("Function not implemented.");
+        } }/>
       {props.show? 
       <div className="checkout">
         <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>
