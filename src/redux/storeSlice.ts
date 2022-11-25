@@ -7,6 +7,7 @@ type StoreProps = {
       idProduct: number;
       comment: string;
       amount: number;
+      name:string;
     }
   ];
 };
@@ -17,9 +18,11 @@ export const store = createSlice({
   initialState,
   reducers: {
     add: (state, action) => {
+      // setar a mesa ao acessar o qrCode
+      localStorage.setItem("@restaurante/idTable", JSON.stringify(state));
       const indexTable = state.findIndex(
         (item) => Number(item.idTable) === Number(action.payload.idTable)
-      );
+      );     
 
       if (indexTable >= 0) {
         const indexOrder = state[indexTable].order.findIndex(
@@ -30,11 +33,13 @@ export const store = createSlice({
           state[indexTable].order[indexOrder].comment = action.payload.comment;
           state[indexTable].order[indexOrder].amount =
           state[indexTable].order[indexOrder].amount + action.payload.amount;
+          state[indexTable].order[indexOrder].name = action.payload.name;
         } else {
           const data = {
             idProduct: action.payload.idProduct,
             comment: action.payload.comment,
             amount: action.payload.amount,
+            name:action.payload.name,
           };
 
           state[indexTable].order.push(data);
@@ -47,15 +52,17 @@ export const store = createSlice({
               idProduct: action.payload.idProduct,
               comment: action.payload.comment,
               amount: action.payload.amount,
+              name:action.payload.name,
             },
           ],
         };
 
         state.push(data);
       } 
+    },
       },     
-  },
-});
+    },      
+);
 
 // // enviar dados para o redux
 // const idTable = await localStorage.getItem("@restaurante/idTable")
@@ -63,25 +70,5 @@ export const store = createSlice({
 //   return alert()
 // }
 
-// dispatch(
-//   add({
-//     idTable,
-//     idProduct: 99,
-//     comment: "",
-//     amount: 1,
-//   })
-// );
-
-// // setar a mesa ao acessar o qrCode
-// localStorage.setItem("@restaurante/idTable", JSON.stringify(state));
-
-  
-        //Verificar o estado possui a mesa (idtable)
-        //Se tive idtable precisa verificar o order que está recebendo no action
-        //Se tiver o idProduct dentro do order vai ter usar o amount +1
-        //Caso não tenha idProduct dentro do order vai ter que dar um push no order
-        //Se não cair nenhuma condição anterior pode dar o push no estato com toda a action recebida (linha 27)
-       
-
-export const {add} = store.actions
-export default store.reducer
+export const { add } = store.actions;
+export default store.reducer;
