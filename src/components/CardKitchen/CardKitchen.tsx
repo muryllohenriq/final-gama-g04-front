@@ -10,19 +10,31 @@ export function CardKitchen() {
     return (
         <>
                 <ContainerKitchen>
-                    <ContainerKitchen.Body style={{ display: "flex", flexDirection: "column" }}>
+                    <ContainerKitchen.Body style={{ display: "flex", flexDirection: "column"}}>
                         <ContainerKitchen.Title>Mesa X</ContainerKitchen.Title>
-                        <ContainerKitchen.Subtitle>
+                        <ContainerKitchen.Subtitle style={{margin: "0px 0px 10px"}}>
                             00 min
                         </ContainerKitchen.Subtitle>
                         <OrderedsCard>
                             <Ordered>
-                                <div style={{ display: "flex" }}>
+                                <div style={{ display: "flex", marginTop: "15px" }}>
                                     <div style={{ width: "24px", height: "24px", background: "rgba(161, 76, 71, 0.5)",
                                     borderRadius: "8px"}}><span style={{ fontWeight: "500", paddingLeft: "9px" }}>1</span></div>
                                     <span>Item</span>
                                 </div>
-                                <ul>
+                                <ul style={{ padding:"0px 0px 0px 50px" }}> 
+                                    <li>Detalhe</li>
+                                    <li>Detalhe</li>
+                                </ul>
+                            </Ordered>
+                            <Ordered>
+                                <div style={{ display: "flex"}}>
+                                    <div style={{ width: "24px", height: "24px", background: "rgba(161, 76, 71, 0.5)",
+                                    borderRadius: "8px"}}> 
+                                    <span style={{ fontWeight: "500", paddingLeft: "9px"}}>1</span></div>
+                                    <span>Item</span>
+                                </div>
+                                <ul style={{ padding:"0px 0px 0px 50px" }}>
                                     <li>Detalhe</li>
                                     <li>Detalhe</li>
                                 </ul>
@@ -33,18 +45,7 @@ export function CardKitchen() {
                                     borderRadius: "8px"}}><span style={{ fontWeight: "500", paddingLeft: "9px" }}>1</span></div>
                                     <span>Item</span>
                                 </div>
-                                <ul>
-                                    <li>Detalhe</li>
-                                    <li>Detalhe</li>
-                                </ul>
-                            </Ordered>
-                            <Ordered>
-                                <div style={{ display: "flex" }}>
-                                    <div style={{ width: "24px", height: "24px", background: "rgba(161, 76, 71, 0.5)",
-                                    borderRadius: "8px"}}><span style={{ fontWeight: "500", paddingLeft: "9px" }}>1</span></div>
-                                    <span>Item</span>
-                                </div>
-                                <ul>
+                                <ul style={{ padding:"0px 0px 0px 50px" }}>
                                     <li>Detalhe</li>
                                     <li>Detalhe</li>
                                 </ul>
