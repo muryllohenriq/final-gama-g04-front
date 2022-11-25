@@ -33,10 +33,16 @@ Confira [aqui](http://www.site.com.br) o link do nosso projeto no ar.
 
 ## Autores
 
-<img src="https://avatars.githubusercontent.com/u/104599786?v=4" href="https://github.com/jvdalaglio" width="100px" height="100px">
-<img src="https://avatars.githubusercontent.com/u/108437963?v=4" href="https://github.com/Karolinegaia" width="100px" height="100px">
-<img src="https://avatars.githubusercontent.com/u/105292489?v=4" href="https://github.com/muryllohenriq" width="100px" height="100px">
-<img src="https://avatars.githubusercontent.com/u/109231674?v=4" href="https://github.com/alyce-developer" width="100px" height="100px">
-<img src="https://avatars.githubusercontent.com/u/63968764?v=4" href="https://github.com/lusouzarego" width="100px" height="100px">
-<img src="https://avatars.githubusercontent.com/u/109757967?v=4" href="https://github.com/MairlaSousa" width="100px" height="100px">
-<img src="https://avatars.githubusercontent.com/u/73517606?v=4" href="https://github.com/keuwey" width="100px" height="100px">
+<a href="https://github.com/jvdalaglio"><img src="https://avatars.githubusercontent.com/u/104599786?v=4" width="100px" height="100px"></a>
+
+<a href="https://github.com/Karolinegaia"><img src="https://avatars.githubusercontent.com/u/108437963?v=4" href="https://github.com/Karolinegaia" width="100px" height="100px"></a>
+
+<a href="https://github.com/muryllohenriq"><img src="https://avatars.githubusercontent.com/u/105292489?v=4" width="100px" height="100px"></a>
+
+<a href="https://github.com/alyce-developer"><img src="https://avatars.githubusercontent.com/u/109231674?v=4" width="100px" height="100px"></a>
+
+<a href="https://github.com/lusouzarego"><img src="https://avatars.githubusercontent.com/u/63968764?v=4" width="100px" height="100px"></a>
+
+<a href="https://github.com/MairlaSousa"><img src="https://avatars.githubusercontent.com/u/109757967?v=4" width="100px" height="100px"></a>
+
+<a href="https://github.com/keuwey"><img src="https://avatars.githubusercontent.com/u/73517606?v=4" href="https://github.com/keuwey" width="100px" height="100px"></a>
