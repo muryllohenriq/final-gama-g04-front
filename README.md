@@ -42,10 +42,10 @@ Confira [aqui](http://www.site.com.br) o link do nosso projeto no ar.
 
 ## Autores
 
-<img src="https://avatars.githubusercontent.com/u/104599786?v=4"> [@jvdalaglio](https://github.com/jvdalaglio)
-<img src="https://avatars.githubusercontent.com/u/108437963?v=4"> [@Karolinegaia](https://github.com/Karolinegaia)
-<img src="https://avatars.githubusercontent.com/u/105292489?v=4"> [@muryllohenriq](https://github.com/muryllohenriq)
-<img src="https://avatars.githubusercontent.com/u/109231674?v=4"> [@alyce-developer](https://github.com/alyce-developer)
-<img src="https://avatars.githubusercontent.com/u/63968764?v=4"> [@lusouzarego](https://github.com/lusouzarego)
-<img src="https://avatars.githubusercontent.com/u/109757967?v=4"> [@MairlaSousa](https://github.com/MairlaSousa)
-<img src="https://avatars.githubusercontent.com/u/73517606?v=4"> [@keuwey](https://github.com/keuwey)
+<img src="https://avatars.githubusercontent.com/u/104599786?v=4" width="100px" height="100px"> [@jvdalaglio](https://github.com/jvdalaglio)
+<img src="https://avatars.githubusercontent.com/u/108437963?v=4" width="100px" height="100px"> [@Karolinegaia](https://github.com/Karolinegaia)
+<img src="https://avatars.githubusercontent.com/u/105292489?v=4" width="100px" height="100px"> [@muryllohenriq](https://github.com/muryllohenriq)
+<img src="https://avatars.githubusercontent.com/u/109231674?v=4" width="100px" height="100px"> [@alyce-developer](https://github.com/alyce-developer)
+<img src="https://avatars.githubusercontent.com/u/63968764?v=4" width="100px" height="100px"> [@lusouzarego](https://github.com/lusouzarego)
+<img src="https://avatars.githubusercontent.com/u/109757967?v=4" width="100px" height="100px"> [@MairlaSousa](https://github.com/MairlaSousa)
+<img src="https://avatars.githubusercontent.com/u/73517606?v=4" width="100px" height="100px"> [@keuwey](https://github.com/keuwey)
