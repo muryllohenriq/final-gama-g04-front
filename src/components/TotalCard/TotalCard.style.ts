@@ -9,6 +9,7 @@ export const TotalDiv = styled.div`
   background: #EDEDED;
   border-radius: 8px;
   padding-right: 8px;
+  padding: 5px;
 
   &.details {
     margin-left: 25px;
@@ -37,7 +38,7 @@ export const TotalDiv = styled.div`
     padding: 10px 0px 11px 24px;
 
     &.details {
-      padding: 5px;
+      padding: 0px;
     }
   }
 

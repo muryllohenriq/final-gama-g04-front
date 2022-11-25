@@ -37,6 +37,8 @@ export const ControlStyle = styled.section`
     width: auto;
     padding: 0 15px;
     margin: 0;
+    background: none;
+    border: none;
   }
 
   img {

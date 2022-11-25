@@ -25,7 +25,7 @@ export function TotalCard(props: TotalCardProps) {
   
   return (
     <TotalDiv className={props.name}>
-      <div className={`total-price ${props.price}`}>
+      <div className={`total-price ${props.name}`}>
         {props.show ? <CounterStyle className={props.name}>
           <GrFormSubtract onClick={() => setCount((count) => count - 1)} />
           <p>{count}</p>
