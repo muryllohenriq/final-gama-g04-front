@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CardStyle = styled.section`
-  background-color: #ededed;
+  background-color: #FFFFFF;
+  box-shadow:2px 2px 15px rgba(29, 28, 28, 0.07);
   width: 320px;
   height: 124px;
   border-radius: 16px;

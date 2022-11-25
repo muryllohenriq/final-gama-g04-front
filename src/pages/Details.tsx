@@ -1,15 +1,24 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
-import { CardDetails, CardProps } from "../components/Card/Details";
+import { CardDetails, CardProps } from '../components/Card/Details';
 import api from "../services/api";
 import { useParams } from "react-router-dom";
-import { CheckBox } from "../components/checkboxDetails/CheckBox";
+import { useSelector, useDispatch } from 'react-redux';
+import { StoreState } from "../redux";
+import { TotalCard } from '../components/TotalCard/TotalCard';
+import { add } from "../redux/storeSlice";
 
 
-function Details() {
+export function Details() {
   const { id } = useParams();
-
+  const dispatch = useDispatch(
+    
+  );
+  const TotalCard = useSelector(
+    (state: StoreState) => state.store);  
   const [product, setProduct] = useState<CardProps>({} as CardProps);
+
+  
 
   async function getProductData() {
     const { data } = await api.get(`products/${id}`);
@@ -32,9 +41,9 @@ function Details() {
         isVegan={product.isVegan}
         isGlutenFree={product.isGlutenFree}
         isEnough={2}
-        category={0}
+        category={0}        
       /> 
-      {/* <CheckBox/> */}
+      
     </>
   );
 }

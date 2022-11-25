@@ -3,12 +3,15 @@ import { CounterStyle } from "./Counter.style";
 import { GrFormAdd, GrFormSubtract } from "react-icons/gr";
 import { HiOutlineTrash } from "react-icons/hi";
 
+
 type CounterProps = {
   name?: string;
+  price?:number;
 }
 
 export function Counter(props:CounterProps) {
   const [count, setCount] = useState(1);
+ 
  
   return (
    <CounterStyle className= {props.name}>
@@ -18,9 +21,9 @@ export function Counter(props:CounterProps) {
      ></HiOutlineTrash>
     ) : (
      <GrFormSubtract onClick={() => setCount((count) => count - 1)} />
-    )}
+    )}  
     <p>{count}</p>
-    <GrFormAdd onClick={() => setCount((count) => count + 1)}></GrFormAdd>
+    <GrFormAdd onClick={() =>  setCount((count) => count + 1)}></GrFormAdd>
    </CounterStyle>
   );
  }
