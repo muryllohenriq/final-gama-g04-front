@@ -14,7 +14,9 @@ export const OrderedsCard = styled.div`
 `
 
 export const Ordered = styled.div`
-
+.ul li{
+    margin-left: 10px
+}
 `
 
 export const ButtonClose = styled.button`

@@ -11,6 +11,8 @@ export function Kitchen() {
             <Page>
                <CardKitchen />
                <CardKitchen />
+               <CardKitchen />
+               <CardKitchen />
             </Page>
         </>
     )
