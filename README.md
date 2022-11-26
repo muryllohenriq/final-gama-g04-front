@@ -52,9 +52,10 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
 ## Funcionalidades Futuras
 
-1. Versão dark mode
-2. Possibilidade de salvar o cardápio em PDF para disponibilizar cardápio físico caso um cliente não tenha conhecimento ou não consiga entrar na plataforma
-3. Possibilidade de mudança de mesa
+1. Barra de busca
+2. Tela de confirmação de envio de pedido na parte da comanda
+3. Tela de confirmação de fechamento de conta na parte da conta
+4. Tela de histórico da cozinha
 
 ## Screenshots
 
