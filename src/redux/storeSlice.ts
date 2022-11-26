@@ -8,6 +8,8 @@ type StoreProps = {
       comment: string;
       amount: number;
       name:string;
+      price: number;
+      image: string;
     }
   ];
 };
@@ -40,6 +42,8 @@ export const store = createSlice({
             comment: action.payload.comment,
             amount: action.payload.amount,
             name:action.payload.name,
+            price: action.payload.price,
+            image: action.payload.image,
           };
 
           state[indexTable].order.push(data);
@@ -52,7 +56,9 @@ export const store = createSlice({
               idProduct: action.payload.idProduct,
               comment: action.payload.comment,
               amount: action.payload.amount,
-              name:action.payload.name,
+              name: action.payload.name,
+              price: action.payload.price,
+              image: action.payload.image,
             },
           ],
         };
