@@ -4,6 +4,7 @@ import Details from "../pages/Details";
 import { Control } from "../pages/Control";
 import { Bill } from "../pages/Bill";
 import  { Search }  from "../pages/Search";
+import  { Kitchen }  from "../pages/Kitchen";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +21,15 @@ const router = createBrowserRouter([
   },
   {
     path: '/bill',
-    element: <Bill />
+    element: <Bill id={""} idTable={""} command={0} order={[]} />
   },
   {
     path: '/search',
     element: <Search />
+  },
+  {
+    path: '/kitchen',
+    element: <Kitchen />
   }
 ]);
 
