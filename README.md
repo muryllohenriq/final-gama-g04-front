@@ -2,6 +2,8 @@
 
 Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver informações e adicionar à comanda. Ele tem como público alvo clientes de restaurantes e outros estabelecimentos com o objetivo de agilizar os pedidos e facilitar o trabalho dos garçons, oferecendo mais rapidez e agilidade, tornado o processo de fazer pedidos mais simples e prático.
 
+<img src="src/assets/courierlogook.png" width="400px" height="400px">
+
 ## Instalação
 
 ```text
@@ -13,7 +15,7 @@ npm run dev
 
 ## Deploy
 
-Confira [aqui](http://www.site.com.br) o link do nosso projeto no ar.
+Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
 ## Funcionalidades
 
@@ -34,15 +36,9 @@ Confira [aqui](http://www.site.com.br) o link do nosso projeto no ar.
 ## Autores
 
 <a href="https://github.com/jvdalaglio"><img src="https://avatars.githubusercontent.com/u/104599786?v=4" width="100px" height="100px"></a>
-
 <a href="https://github.com/Karolinegaia"><img src="https://avatars.githubusercontent.com/u/108437963?v=4" href="https://github.com/Karolinegaia" width="100px" height="100px"></a>
-
 <a href="https://github.com/muryllohenriq"><img src="https://avatars.githubusercontent.com/u/105292489?v=4" width="100px" height="100px"></a>
-
 <a href="https://github.com/alyce-developer"><img src="https://avatars.githubusercontent.com/u/109231674?v=4" width="100px" height="100px"></a>
-
 <a href="https://github.com/lusouzarego"><img src="https://avatars.githubusercontent.com/u/63968764?v=4" width="100px" height="100px"></a>
-
 <a href="https://github.com/MairlaSousa"><img src="https://avatars.githubusercontent.com/u/109757967?v=4" width="100px" height="100px"></a>
-
 <a href="https://github.com/keuwey"><img src="https://avatars.githubusercontent.com/u/73517606?v=4" href="https://github.com/keuwey" width="100px" height="100px"></a>
