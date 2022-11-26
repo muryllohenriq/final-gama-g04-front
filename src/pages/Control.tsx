@@ -7,15 +7,19 @@ import { ControlCards } from "./Control.style";
 
 export function Control() {
   const urlParams = new URLSearchParams(location.search);
-  const id = urlParams.get('table');
+  const id = urlParams.get('table');  
 
-
-  const listadePratos = useSelector(
+  
+    const listadePratos = useSelector(
     (state: StoreState) => state.store)
 
   return(
     <>
-    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={0} tableId={id}/>
+    {listadePratos.map((pratos) => {return (
+      pratos.order.map((order) => {return (
+    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={order.amount * order.price} tableId={id}/>
+      )})
+    )})}
     <ControlCards>
     {listadePratos.map((prato) => { 
       return (
