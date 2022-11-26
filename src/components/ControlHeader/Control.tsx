@@ -13,7 +13,7 @@ export type ControlHeaderProps = {
   text: string;
   show?: boolean;
   price:number;
-  tableId:number;
+  tableId:number | string | null;
   idProduct: number;
 }
 

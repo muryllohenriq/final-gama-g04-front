@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/bill',
-    element: <Bill />
+    element: <Bill id={""} idTable={""} command={0} order={[]} />
   },
   {
     path: '/search',
