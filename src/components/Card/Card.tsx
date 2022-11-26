@@ -6,12 +6,12 @@ import { Counter } from "../CounterButton/CounterButton";
 export type CardProps = {
  idProduct: number;
  name: string;
- description: string;
+ description?: string;
  image: string;
  price: number;
- isVegan: boolean;
- isGlutenFree: boolean;
- category: number;
+ isVegan?: boolean;
+ isGlutenFree?: boolean;
+ category?: number;
  counter?: boolean;
 };
 
