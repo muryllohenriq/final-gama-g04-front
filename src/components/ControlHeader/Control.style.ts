@@ -14,7 +14,6 @@ export const ControlStyle = styled.section`
   }
 
   strong {
-    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -38,6 +37,8 @@ export const ControlStyle = styled.section`
     width: auto;
     padding: 0 15px;
     margin: 0;
+    background: none;
+    border: none;
   }
 
   img {

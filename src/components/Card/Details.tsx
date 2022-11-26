@@ -1,7 +1,12 @@
 import { DetailsStyle } from "./Details.style";
 import { Badge } from "../Badge/Badge";
 import Icon from "../../assets/icon-people.png";
-import { FaProductHunt } from "react-icons/fa";
+import { TotalCard } from "../TotalCard/TotalCard";
+import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { add } from "../../redux/storeSlice";
+import { useState } from "react";
+
 
 export type CardProps = {
   idProduct: number;
@@ -13,17 +18,24 @@ export type CardProps = {
   isGlutenFree: boolean;
   isEnough: number;
   category: number;
-};
-
+}
 export function CardDetails(props: CardProps) {
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const [comment, setComment] = useState("")
+  
+
+  function handleClick(Counter: number) {
+    dispatch(add({ idTable: 10, idProduct: Number(id), comment, amount: Counter, name:(props.name) }))
+  }
   return (
     <DetailsStyle>
-      <div className="container">
+      <div className="container" id="container">
         <img className="image" src={props.image} alt="imagens pratos" />
         <div className="info">
           <div className="badges">
-            {props.isGlutenFree ? <Badge id="2" text="Sem glúten" /> : ""}
-            {props.isVegan ? <Badge id="1" text="Vegano" /> : ""}
+            {props.isGlutenFree && <Badge id="2" text="Sem glúten" />}
+            {props.isVegan && <Badge id="1" text="Vegano" />}
           </div>
           <div className="description">
             <p className="food-name">{props.name}</p>
@@ -34,9 +46,18 @@ export function CardDetails(props: CardProps) {
             </p>
             <p className="text">{props.description}</p>
           </div>
-          <p className="price">R${props.price}</p>
         </div>
       </div>
+      <div className="ctn">
+        <form className="container-2" method="" action="submit" name="">
+          <div className="obs">
+            <strong>Alguma observação?</strong>            
+            <textarea className="textarea" placeholder="Ex:Tirar a cebola, maionese à parte" value={comment}
+              onChange={(event: { target: { value: any; }; }) => setComment(event.target.value)} />
+          </div>
+        </form>
+      </div>
+      <TotalCard show text="Adicionar à comanda" onClick={handleClick} name="details" price={props.price} tableId={10} idProduct={props.idProduct} />
     </DetailsStyle>
   );
 }

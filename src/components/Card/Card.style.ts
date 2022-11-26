@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CardStyle = styled.section`
-  background-color: #ededed;
+  background-color: #FFFFFF;
+  box-shadow:2px 2px 15px rgba(29, 28, 28, 0.07);
   width: 320px;
   height: 124px;
   border-radius: 16px;
   display: flex;
   align-items: center;
-  font-family: "Questrial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 4px;
 
   strong {
@@ -16,9 +17,10 @@ export const CardStyle = styled.section`
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 100%;
+    line-height: 90%;
     color: #000;
-    max-height: 30px;
+    height: 29px;
+    width: 98%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -32,12 +34,13 @@ export const CardStyle = styled.section`
 
   .image {
     border-radius: 12px;
-    width: 116px;
-    height: 116px;
+    width: 112px;
+    height: 112px;
   }
 
   .badge-div {
     padding-right: 6px;
+    padding-top: 2px;
     display: flex;
     justify-content: flex-end;
     height: 24px;
@@ -53,7 +56,6 @@ export const CardStyle = styled.section`
   .description {
     margin: 0;
     padding-right: 8px;
-    margin-bottom: 15px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -76,6 +78,13 @@ export const CardStyle = styled.section`
     text-align: start;
     padding-right: 8px;
     margin: 0;
+  }
+
+  .price-div {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: 10px;
   }
 `;
 

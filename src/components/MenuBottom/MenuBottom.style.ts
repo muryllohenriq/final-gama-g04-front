@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const NavbarBottom = styled(Navbar)`
         width: 320px; 
         height: 63px;
-        background-color: #676767; 
+        background-color: #A24C47; 
         border-radius: 24px 24px 24px 24px;
         margin: 0 auto;
         margin-bottom: 16px;

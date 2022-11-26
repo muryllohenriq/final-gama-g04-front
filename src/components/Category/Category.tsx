@@ -26,15 +26,6 @@ export function Category(props: CategoryProps) {
    <CategoryHeader>
     <span>
       {categoryTitle[props.id]}
-     {/* {props.id === 1
-      ? "Bebidas"
-      : props.id === 2
-      ? "Entradas"
-      : props.id === 3
-      ? "Saladas"
-      : props.id === 4
-      ? "Hambúrgueres"
-      : "Sobremesas"} */}
     </span>
    </CategoryHeader>
    {productList

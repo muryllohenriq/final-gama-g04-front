@@ -7,9 +7,10 @@ import { MenuBottom } from "../components/MenuBottom/MenuBottom";
 function Navbar() {
   return (
     <>
-      <Header />
+      <Header hasSearch/>
       <NavbarBs
-        style={{ marginTop: "63px", backgroundColor: "white", height: "60px" }}
+        style={{ marginTop: "63px", backgroundColor: "#FCFCFC", height: "60px"
+      }}
         fixed="top"
       >
         <Nav className="styledNav">
@@ -34,7 +35,7 @@ function Navbar() {
           </Button>
         </Nav>
       </NavbarBs>
-      <Container className="styledCards">
+      <Container style={{ paddingBottom: "80px"}} className="styledCards">
         <Category id={1} />
         <Category id={2} />
         <Category id={3} />
