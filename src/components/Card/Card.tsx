@@ -24,8 +24,8 @@ export function Card(props: CardProps) {
    <div className="info">
     <CustomLink to={`/details/${props.idProduct}`}>
      <div className="badge-div">
-      {props.isGlutenFree && <Badge id="2" />}
-      {props.isVegan && <Badge id="1" />}
+     {props.isGlutenFree && <Badge name="badge2" />}
+      {props.isVegan && <Badge name="badge1" />}
      </div>
      <strong>{props.name}</strong>
      <p className="description">{props.description}</p>
