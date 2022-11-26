@@ -2,11 +2,9 @@
 
 Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver informações e adicionar à comanda. Ele tem como público alvo clientes de restaurantes e outros estabelecimentos com o objetivo de agilizar os pedidos e facilitar o trabalho dos garçons, oferecendo mais rapidez e agilidade, tornado o processo de fazer pedidos mais simples e prático.
 
-<br>
-
+<div align="center">
 <img src="src/assets/courierlogook.png" width="400px" height="400px">
-
-<br>
+</div>
 
 ## Competências Desenvolvidas
 
@@ -19,14 +17,14 @@ Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver info
 
 ## Entregáveis
 
-### • Para o cliente
+### Para o cliente
 
 1. Cardápio de produtos
 2. Detalhes dos produtos
 3. Execução do pedido pelo sistema
 4. Fechamento de conta
 
-### • Para o proprietário
+### Para o proprietário
 
 1. Visualização dos pedidos que são feitos com exclusão quando são finalizados
 2. Histórico de pedidos realizados e já finalizados
@@ -59,15 +57,17 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
 ## Screenshots
 
+<div align="center">
 <img src="src/assets/print1.png" width="490px" width="850px">
+</div>
 
-<br>
-
+<div align="center">
 <img src="src/assets/print2.png" width="490px" width="850px">
+</div>
 
-<br>
-
+<div align="center">
 <img src="src/assets/print3.png" width="490px" width="850px">
+</div>
 
 ## Tecnologias utilizadas
 
