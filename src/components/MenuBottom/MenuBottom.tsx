@@ -9,7 +9,7 @@ export function MenuBottom() {
 
     return (
         <NavbarBottom fixed="bottom">
-            <BtnBottom to="/">
+            <BtnBottom to={`/${search}`}>
                 <img src={iconCardapio} alt="" />
                 Cardápio
             </BtnBottom>
@@ -17,7 +17,7 @@ export function MenuBottom() {
                 <img src={iconComanda} alt="" />
                 Comanda
             </BtnBottom>
-            <BtnBottom to="/bill">
+            <BtnBottom to={`/bill${search}`}>
                 <img src={iconConta} alt="" />
                 Conta
             </BtnBottom>
