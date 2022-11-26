@@ -2,7 +2,32 @@
 
 Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver informações e adicionar à comanda. Ele tem como público alvo clientes de restaurantes e outros estabelecimentos com o objetivo de agilizar os pedidos e facilitar o trabalho dos garçons, oferecendo mais rapidez e agilidade, tornado o processo de fazer pedidos mais simples e prático.
 
+<div align="center">
 <img src="src/assets/courierlogook.png" width="400px" height="400px">
+</div>
+
+## Competências Desenvolvidas
+
+- React
+- Redux
+- TypeScript
+- Bootstrap
+- Styled-components
+- Consumo de API com Axios
+
+## Entregáveis
+
+### Para o cliente
+
+1. Cardápio de produtos
+2. Detalhes dos produtos
+3. Execução do pedido pelo sistema
+4. Fechamento de conta
+
+### Para o proprietário
+
+1. Visualização dos pedidos que são feitos com exclusão quando são finalizados
+2. Histórico de pedidos realizados e já finalizados
 
 ## Instalação
 
@@ -19,9 +44,30 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
 ## Funcionalidades
 
-- Mobile First (Pensado especialmente para tablets e smartphones)
-- Produtos separados por categoria
-- Página de detalhes de cada prato
+1. Mobile First (Pensado especialmente para tablets e smartphones)
+2. Produtos separados por categoria
+3. Página de detalhes de cada prato
+
+## Funcionalidades Futuras
+
+1. Barra de busca
+2. Tela de confirmação de envio de pedido na parte da comanda
+3. Tela de confirmação de fechamento de conta na parte da conta
+4. Tela de histórico da cozinha
+
+## Screenshots
+
+<div align="center">
+<img src="src/assets/print1.png" width="490px" width="850px">
+</div>
+
+<div align="center">
+<img src="src/assets/print2.png" width="490px" width="850px">
+</div>
+
+<div align="center">
+<img src="src/assets/print3.png" width="490px" width="850px">
+</div>
 
 ## Tecnologias utilizadas
 
@@ -30,13 +76,8 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-
-<!-- <h1 justify-content="center">
-<img src="https://axios-http.com/assets/logo.svg" width="90px" height="20px">
-</h1> -->
 
 ## Autores
 

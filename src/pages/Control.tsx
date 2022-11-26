@@ -6,6 +6,7 @@ import { StoreState } from "../redux";
 import { ControlCards } from "./Control.style";
 
 export function Control() {
+
   const listadePratos = useSelector(
     (state: StoreState) => state.store)
 
@@ -23,6 +24,15 @@ export function Control() {
           )
         })}
       </ControlCards>
+
+  const urlParams = new URLSearchParams(location.search);
+
+  const id = urlParams.get('table');
+
+  return(
+    <>
+    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={0} tableId={id}/>
+
     <MenuBottom />
     </>
   )
