@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { StoreState } from '../../redux/index';
 import { add } from "../../redux/storeSlice";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { CounterStyle, TotalDiv } from "./TotalCard.style";
 import { ControlHeaderProps } from "../ControlHeader/Control"
 import { Counter } from '../CounterButton/CounterButton';
@@ -21,7 +21,7 @@ export type TotalCardProps = ControlHeaderProps & {
 export function TotalCard(props: TotalCardProps) {
   const [count, setCount] = useState(1);
 
-
+  const { search } = useLocation();
   
   return (
     <TotalDiv className={props.name}>
@@ -39,7 +39,7 @@ export function TotalCard(props: TotalCardProps) {
       </div>
       {props.name === "details" ?
         <div className={`textbutton ${props.name}`}>
-          <CustomLink to={`/control`}>
+          <CustomLink to={`/control${search}`}>
             <p onClick= {()=> props.onClick(count)} className={`button ${props.name}`}>Adicionar à comanda</p>
           </CustomLink>
           <p className="price-add">{props.price && props.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
