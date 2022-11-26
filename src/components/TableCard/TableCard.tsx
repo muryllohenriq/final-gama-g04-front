@@ -6,7 +6,7 @@ export type OrderProps = {
 }
 
 export type TableCardProps = {
-  id: number;
+  id: number | string | null;
   idTable?: number;
   order?: Array<OrderProps>;
 }

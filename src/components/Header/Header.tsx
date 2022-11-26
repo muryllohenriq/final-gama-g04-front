@@ -9,6 +9,7 @@ import logo from "../../assets/logo.png"
 type HeaderProps = {
   hasGoBack?: boolean;
   hasSearch?: boolean;
+  hasOrdered?: boolean;
 };
 
 function Header(props: HeaderProps) {
