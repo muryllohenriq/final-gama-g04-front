@@ -38,15 +38,7 @@ export function Bill(props: TableProps) {
 
   return(
     <>
-    <ControlHeader text="Fechar conta" name="Conta" />
-    <div>
-      {orderList.map((data, index) => (
-              <div
-                key={index}
-                id={data.idTable}
-              />
-            ))}
-    </div>
+    <ControlHeader text="Fechar conta" name="Conta" idProduct={1} tableId={1} price={0} />
     <MenuBottom />
     </>
   )

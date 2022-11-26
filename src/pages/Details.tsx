@@ -40,8 +40,8 @@ export function Details() {
         price={product.price}
         isVegan={product.isVegan}
         isGlutenFree={product.isGlutenFree}
-        isEnough={2}
-        category={0}        
+        isEnough={product.isEnough}
+        category={product.category}        
       /> 
       
     </>

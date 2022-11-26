@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import iconBuscar from "../../assets/buscar-icon.svg"
 import { BtnSearch } from "./Header.style";
 import "./Header.style.css";
+import logo from "../../assets/logo.png"
 
 type HeaderProps = {
   hasGoBack?: boolean;
@@ -21,18 +22,8 @@ function Header(props: HeaderProps) {
           <FaChevronLeft color="white" />
         </Link>
       )}
-      {props.hasOrdered && (
-        <span style={{ fontWeight: "600", color: "white", paddingLeft: "107px" }} >X pedidos</span>
-      )}
-      <div className={`box-logo ${props.hasGoBack ? "logo-margin-right" : ""} ${props.hasSearch ? "logo-margin-left" : ""} ${props.hasOrdered ? "logo-margin-right-kitchen" : ""}`}>
-        <div
-          className="logo"
-          style={{
-            height: "47.25px",
-            width: "96px",
-            backgroundColor: "#F9F9F9",
-          }}
-        ></div>
+      <div className={`box-logo ${props.hasGoBack ? "logo-margin-right" : ""} ${props.hasSearch ? "logo-margin-left" : ""}`}>
+        <div><img src={logo} style={{width: "250px"}} alt="" /></div>
       </div>
       {props.hasSearch && (
         <BtnSearch to="/search">

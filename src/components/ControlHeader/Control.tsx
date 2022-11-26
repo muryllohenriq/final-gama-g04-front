@@ -32,6 +32,9 @@ export function ControlHeader(props: ControlHeaderProps) {
     getTables();
   });
 
+  function handleClick() {
+  }
+
   return (
     <>
     <Header />
@@ -40,15 +43,12 @@ export function ControlHeader(props: ControlHeaderProps) {
         <strong>{props.name}</strong>
         <TableCard id={props.tableId}/>
       </div>
-      <TotalCard text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct} onClick={function (Counter: number): void {
-          throw new Error("Function not implemented.");
-        } }/>
-      {props.show? 
+      <TotalCard onClick={handleClick} text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct}/>
+      {props.show && 
       <div className="checkout">
         <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>
         <img src="/src/assets/arrow.svg" alt="" />
       </div>
-      : ""
       }
     </ControlStyle>
     </>

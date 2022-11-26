@@ -1,39 +1,49 @@
-# README Temporário
+# COURIER
 
-## Combinados até o momento:
+Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver informações e adicionar à comanda. Ele tem como público alvo clientes de restaurantes e outros estabelecimentos com o objetivo de agilizar os pedidos e facilitar o trabalho dos garçons, oferecendo mais rapidez e agilidade, tornado o processo de fazer pedidos mais simples e prático.
 
-- Padrão de branch: feature/nome-da-feature-em-ingles
+<img src="src/assets/courierlogook.png" width="400px" height="400px">
 
-- Padrão de commit: em inglês, primeira letra maiúscula, e verbo no gerúndio. Ex: 'Creating new feature'
+## Instalação
 
-- Variáveis: camelCase
-- Classes: PascalCase
-- nome de arquivos utilizar ponto e não _ ou espaço, exemplo: metodo.metodo
-
-- O projeto será em MOBILE FIRST.
-
-- Convide um colaborador para revisar seu pull request.
-
-- Merge apenas quando existir um progresso e tudo estiver funcionando corretamente.
-
-- JAMAIS DAR PUSH DIRETO NA MAIN
-
-## Instalações até o momento: 
-```
-npm create vite@latest
+```text
+git clone https://github.com/muryllohenriq/final-gama-g04-front.git
+cd final-gama-g04-front
 npm install
-npm i react-router-dom bootstrap react-bootstrap
-npm i --save-dev @types/react-router-dom
-npm install axios
-npm install @reduxjs/toolkit react-redux
-npm install react-icons --save
-npm install --save styled-components
-npm i --save-dev @types/styled-components
+npm run dev
 ```
 
-## Scripts criados no package.json:
-```
+## Deploy
 
-```
+Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
-## Lembretes:
+## Funcionalidades
+
+- Mobile First (Pensado especialmente para tablets e smartphones)
+- Produtos separados por categoria
+- Página de detalhes de cada prato
+
+## Tecnologias utilizadas
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+
+<!-- <h1 justify-content="center">
+<img src="https://axios-http.com/assets/logo.svg" width="90px" height="20px">
+</h1> -->
+
+## Autores
+
+<a href="https://github.com/jvdalaglio"><img src="https://avatars.githubusercontent.com/u/104599786?v=4" width="100px" height="100px"></a>
+<a href="https://github.com/Karolinegaia"><img src="https://avatars.githubusercontent.com/u/108437963?v=4" href="https://github.com/Karolinegaia" width="100px" height="100px"></a>
+<a href="https://github.com/muryllohenriq"><img src="https://avatars.githubusercontent.com/u/105292489?v=4" width="100px" height="100px"></a>
+<a href="https://github.com/alyce-developer"><img src="https://avatars.githubusercontent.com/u/109231674?v=4" width="100px" height="100px"></a>
+<a href="https://github.com/lusouzarego"><img src="https://avatars.githubusercontent.com/u/63968764?v=4" width="100px" height="100px"></a>
+<a href="https://github.com/MairlaSousa"><img src="https://avatars.githubusercontent.com/u/109757967?v=4" width="100px" height="100px"></a>
+<a href="https://github.com/keuwey"><img src="https://avatars.githubusercontent.com/u/73517606?v=4" href="https://github.com/keuwey" width="100px" height="100px"></a>
