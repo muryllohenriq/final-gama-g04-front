@@ -6,6 +6,10 @@ import { StoreState } from "../redux";
 import { ControlCards } from "./Control.style";
 
 export function Control() {
+  const urlParams = new URLSearchParams(location.search);
+  const id = urlParams.get('table');
+
+
   const listadePratos = useSelector(
     (state: StoreState) => state.store)
 
