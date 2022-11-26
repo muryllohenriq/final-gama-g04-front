@@ -17,8 +17,6 @@ Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver info
 - Styled-components
 - Consumo de API com Axios
 
-<br>
-
 ## Entregáveis
 
 ### • Para o cliente
@@ -33,8 +31,6 @@ Nosso app é um cardápio virtual que tem funções como fazer pedidos, ver info
 1. Visualização dos pedidos que são feitos com exclusão quando são finalizados
 2. Histórico de pedidos realizados e já finalizados
 
-<br>
-
 ## Instalação
 
 ```text
@@ -44,13 +40,9 @@ npm install
 npm run dev
 ```
 
-<br>
-
 ## Deploy
 
 Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
-
-<br>
 
 ## Funcionalidades
 
@@ -64,8 +56,6 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 2. Possibilidade de salvar o cardápio em PDF para disponibilizar cardápio físico caso um cliente não tenha conhecimento ou não consiga entrar na plataforma
 3. Possibilidade de mudança de mesa
 
-<br>
-
 ## Screenshots
 
 <img src="src/assets/print1.png" width="490px" width="850px">
@@ -78,8 +68,6 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
 <img src="src/assets/print3.png" width="490px" width="850px">
 
-<br>
-
 ## Tecnologias utilizadas
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -89,8 +77,6 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-
-<br>
 
 ## Autores
 
