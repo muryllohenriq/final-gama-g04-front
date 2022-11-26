@@ -32,6 +32,9 @@ export function ControlHeader(props: ControlHeaderProps) {
     getTables();
   });
 
+  function handleClick() {
+  }
+
   return (
     <>
     <Header />
@@ -40,7 +43,7 @@ export function ControlHeader(props: ControlHeaderProps) {
         <strong>{props.name}</strong>
         <TableCard id={props.tableId}/>
       </div>
-      <TotalCard text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct}/>
+      <TotalCard onClick={handleClick} text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct}/>
       {props.show && 
       <div className="checkout">
         <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>

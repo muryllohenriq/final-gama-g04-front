@@ -4,6 +4,7 @@
   border-color: #A24C47;
   background-color: #fff;  
   cursor: pointer;
+  margin-left: 8px;
 }
 
 #styleButtons:hover {  
