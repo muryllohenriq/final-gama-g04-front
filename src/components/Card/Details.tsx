@@ -46,8 +46,7 @@ export function CardDetails(props: CardProps) {
             </p>
             <p className="text">{props.description}</p>
           </div>
-        </div>
-      </div>
+        </div>     
       <div className="ctn">
         <form className="container-2" method="" action="submit" name="">
           <div className="obs">
@@ -57,6 +56,8 @@ export function CardDetails(props: CardProps) {
           </div>
         </form>
       </div>
+      </div>
+
       <TotalCard show text="Adicionar à comanda" onClick={handleClick} name="details" price={props.price} tableId={10} idProduct={props.idProduct} />
     </DetailsStyle>
   );
