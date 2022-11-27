@@ -44,9 +44,10 @@ Confira [_aqui o deploy_](https://courier-tau.vercel.app/) do nosso projeto.
 
 ## Funcionalidades
 
-1. Mobile First (Pensado especialmente para tablets e smartphones)
-2. Produtos separados por categoria
-3. Página de detalhes de cada prato
+1. Mobile First (Pensado especialmente para telas pequenas)
+2. Funciona também em tablets, notebooks e PC's
+3. Produtos separados por categoria
+4. Página de detalhes de cada prato
 
 ## Funcionalidades Futuras
 
