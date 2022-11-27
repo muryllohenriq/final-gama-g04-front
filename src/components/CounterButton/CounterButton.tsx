@@ -22,7 +22,7 @@ export function Counter(props:CounterProps) {
    <CounterStyle className= {props.name}>
     {count === 1 ? (
      <HiOutlineTrash
-      onClick={() => setCount((count) => count - 1)}
+      onClick={() => setCount((count) => count > 1 ? count - 1 : count - 0)}
      ></HiOutlineTrash>
     ) : (
      <GrFormSubtract onClick={() => setCount((count) => count > 0 ? count - 1 : 0)} />
