@@ -34,7 +34,7 @@ export function TotalCard(props: TotalCardProps) {
         </CounterStyle> :
           <>
             <p className="total">Total</p>
-            <p className="price">{props.price && props.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
+            <p className="price">{props.price && totalPrice.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
           </>
         }
       </div>

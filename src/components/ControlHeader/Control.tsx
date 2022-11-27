@@ -6,7 +6,8 @@ import { ControlStyle } from "./Control.style";
 import { TableCard } from "../TableCard/TableCard";
 import { TotalCard } from "../TotalCard/TotalCard";
 import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { StoreState } from "../../redux";
 
 export type ControlHeaderProps = {
   name?: string;
@@ -22,7 +23,7 @@ export function ControlHeader(props: ControlHeaderProps) {
   const { id } = useParams();
   const  dispatch = useDispatch();
   const [tables, setTables] = useState<TableCardProps[]>([]);
-
+  const totalPrice = useSelector((state: StoreState) => state.store);
 
   async function getTables() {
     const {data} = await api.get("tables");
