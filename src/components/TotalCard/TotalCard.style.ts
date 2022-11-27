@@ -11,6 +11,10 @@ export const TotalDiv = styled.div`
   padding-right: 8px;
   padding: 5px;
 
+  @media only screen and (min-width: 720px) {
+    width: 600px;
+  }
+
   &.details {
     margin-left: 25px;
   }

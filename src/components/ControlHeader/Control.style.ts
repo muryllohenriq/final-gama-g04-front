@@ -11,6 +11,10 @@ export const ControlStyle = styled.section`
     align-items: center;
     padding: 30px;
     width: 100%;
+
+    @media only screen and (min-width: 720px) {
+      width: 30%;
+    }
   }
 
   strong {
