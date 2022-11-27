@@ -40,7 +40,7 @@ export function TotalCard(props: TotalCardProps) {
       </div>
       {props.name === "details" ?
         <div className={`textbutton ${props.name}`}>
-          <CustomLink to={`/control${search}`}>
+          <CustomLink to={`/${search}`}>
             <p onClick= {()=> props.onClick(count)} className={`button ${props.name}`}>Adicionar à comanda</p>
           </CustomLink>
           <p className="price-add">{props.price && totalPrice.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
