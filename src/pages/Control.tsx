@@ -13,11 +13,15 @@ export function Control() {
     const listadePratos = useSelector(
     (state: StoreState) => state.store)
 
+    let totalPrice = useSelector(
+      (state: StoreState) => state.store.map((item) => item.order.filter((itens,total) => total += (itens.amount * itens.price)))
+      )
+
   return(
     <>
     {listadePratos.map((pratos) => {return (
-      pratos.order.map((order) => {return (
-    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={order.amount * order.price} tableId={id}/>
+      pratos.order.map((order, total) => {return (
+    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={total = total + (order.price * order.amount)} tableId={id}/>
       )})
     )})}
     <ControlDiv>

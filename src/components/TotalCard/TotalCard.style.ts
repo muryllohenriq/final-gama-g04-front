@@ -15,6 +15,10 @@ export const TotalDiv = styled.div`
     width: 600px;
   }
 
+  @media only screen and (min-width: 840px) {
+    width: 750px;
+  }
+
   &.details {
     margin-left: 25px;
   }
