@@ -25,7 +25,7 @@ export function Counter(props:CounterProps) {
       onClick={() => setCount((count) => count - 1)}
      ></HiOutlineTrash>
     ) : (
-     <GrFormSubtract onClick={() => setCount((count) => count - 1)} />
+     <GrFormSubtract onClick={() => setCount((count) => count > 0 ? count - 1 : 0)} />
     )}  
     <p>{count}</p>
     <GrFormAdd onClick={() =>  setCount((count) => count + 1)}></GrFormAdd>
