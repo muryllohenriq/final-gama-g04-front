@@ -13,4 +13,6 @@ export const CategoryHeader = styled.header`
 
 export const CategoryDiv = styled.div`
   padding-bottom: 10px;
+  padding-top: 126px;
+  margin-top: -110px;
 `
