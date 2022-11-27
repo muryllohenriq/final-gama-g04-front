@@ -26,7 +26,7 @@ export function CardDetails(props: CardProps) {
   
 
   function handleClick(Counter: number) {
-    dispatch(add({ idTable: 10, idProduct: Number(id), comment, amount: Counter, name:(props.name), price:(props.price) }))
+    dispatch(add({ idTable: 10, idProduct: Number(id), comment, amount: Counter, name:(props.name), price:(props.price), image:(props.image) }))
   }
   return (
     <DetailsStyle>
