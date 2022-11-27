@@ -20,6 +20,7 @@ export type TotalCardProps = ControlHeaderProps & {
 
 export function TotalCard(props: TotalCardProps) {
   const [count, setCount] = useState(1);
+  const totalPrice = count * props.price
 
   const { search } = useLocation();
   
@@ -42,7 +43,7 @@ export function TotalCard(props: TotalCardProps) {
           <CustomLink to={`/control${search}`}>
             <p onClick= {()=> props.onClick(count)} className={`button ${props.name}`}>Adicionar à comanda</p>
           </CustomLink>
-          <p className="price-add">{props.price && props.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
+          <p className="price-add">{props.price && totalPrice.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
         </div> :
         <div className="textbutton">
           <p className="button">{props.text}</p>
