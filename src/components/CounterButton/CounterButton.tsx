@@ -2,8 +2,9 @@ import { useState } from "react";
 import { CounterStyle } from "./Counter.style";
 import { GrFormAdd, GrFormSubtract } from "react-icons/gr";
 import { HiOutlineTrash } from "react-icons/hi";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { StoreState } from "../../redux";
+import { remove } from "../../redux/storeSlice";
 
 
 type CounterProps = {
@@ -13,19 +14,24 @@ type CounterProps = {
 
 export function Counter(props:CounterProps) {
   const [count, setCount] = useState(1);
+  const dispatch = useDispatch();
   const getAmount = useSelector(
-    (state:StoreState) => state.store.map((order) => order.order.map((amount) => amount.amount))
-  )
+    (state:StoreState) => state.store.find((table) => table.order)
+  );
+    
+    function handleClick() {
+      dispatch(remove({}))
+    }
  
  
   return (
    <CounterStyle className= {props.name}>
     {count === 1 ? (
      <HiOutlineTrash
-      onClick={() => setCount((count) => count > 1 ? count - 1 : count - 0)}
+      onClick={() => {}}
      ></HiOutlineTrash>
     ) : (
-     <GrFormSubtract onClick={() => setCount((count) => count > 0 ? count - 1 : 0)} />
+     <GrFormSubtract />
     )}  
     <p>{count}</p>
     <GrFormAdd onClick={() =>  setCount((count) => count + 1)}></GrFormAdd>
