@@ -8,9 +8,8 @@ function Navbar() {
   return (
     <>
       <Header hasSearch/>
-      <NavbarBs
-        style={{ marginTop: "63px", backgroundColor: "#FCFCFC", height: "60px", justifyContent:"center", alignItems: "center"
-      }}
+      <NavbarBs className="styleNavBarBs"
+      
         fixed="top"
       >
         <Nav className="styledNav">
@@ -35,7 +34,7 @@ function Navbar() {
           </Button>
         </Nav>
       </NavbarBs>
-      <Container style={{ paddingBottom: "80px"}} className="styledCards">
+      <Container className="styledCards">
         <Category id={1} />
         <Category id={2} />
         <Category id={3} />
