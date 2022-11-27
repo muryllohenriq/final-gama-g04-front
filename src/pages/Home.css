@@ -1,3 +1,12 @@
+.styleNavBarBs{   
+  margin-top: 63px;
+  background: #FCFCFC;
+  height: 60px;
+  justify-content:center;
+  align-items: center;
+}
+
+
 #styleButtons {
   border-radius: 8px;   
   color: #A24C47;
@@ -14,6 +23,8 @@
   transition: 300ms;
 }
 
+
+
 .styledNav {
   display: flex;
   overflow-x: scroll;
@@ -29,4 +40,5 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  padding-bottom: 80px
 }

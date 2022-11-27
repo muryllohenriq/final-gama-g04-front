@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import api from './../../services/api';
+
 
 export const DetailsStyle = styled.section`
   .info {
@@ -12,6 +12,13 @@ export const DetailsStyle = styled.section`
     margin-top: 4px;
     @media only screen and (min-width:768px ){
       margin-left: 40px;
+    }
+
+    #container {
+      background:#FCFCFC;
+    }
+    .ctn{
+      background: #FCFCFC;
     }
 
   }
@@ -124,7 +131,7 @@ export const DetailsStyle = styled.section`
 }
 
   .container-2 {
-    background: #ffff;
+    background: #fff;
     box-shadow: 15px 15px 15px rgba(29, 28, 28, 0.07);
     border-radius: 8px;     
     width: 320px;
@@ -141,7 +148,7 @@ export const DetailsStyle = styled.section`
   }
   .textarea {
     color: #676767;
-    border: 1px solid #dadada;
+    border: 1px solid #FCFCFC;
     border-radius: 5px;
     width: 270px;
     height: 60px;
