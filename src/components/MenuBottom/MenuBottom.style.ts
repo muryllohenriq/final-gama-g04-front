@@ -11,6 +11,14 @@ export const NavbarBottom = styled(Navbar)`
         margin-bottom: 16px;
         display: flex;
         justify-content: space-around;
+
+        @media only screen and (min-width: 600px) {
+          width: 70%;
+        }
+
+        @media only screen and (min-width: 1000px) {
+          width: 40%;
+        }
 `
 
 export const BtnBottom = styled(Link)`

@@ -48,7 +48,6 @@ export function ControlHeader(props: ControlHeaderProps) {
       {props.show && 
       <div className="checkout">
         <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>
-        <img src="/src/assets/arrow.svg" alt="" />
       </div>
       }
     </ControlStyle>
