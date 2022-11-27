@@ -22,6 +22,7 @@ export const CategoryHeader = styled.header`
 export const CategoryDiv = styled.div`
   padding-bottom: 10px;
 
+
   
   @media only screen and (min-width: 700px){
     width: 700px;
@@ -34,4 +35,8 @@ export const CategoryDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
   } 
+
+  padding-top: 126px;
+  margin-top: -110px;
+
 `

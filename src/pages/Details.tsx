@@ -5,8 +5,6 @@ import api from "../services/api";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { StoreState } from "../redux";
-import { TotalCard } from '../components/TotalCard/TotalCard';
-import { add } from "../redux/storeSlice";
 
 
 export function Details() {
