@@ -28,8 +28,8 @@ export const CategoryDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
   } 
-  
-  @media only screen and (min-width: 1000px){
+
+  @media only screen and (min-width: 1200px){
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
