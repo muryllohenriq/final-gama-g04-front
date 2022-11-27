@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 
 export const DetailsStyle = styled.section`
+  .container {
+      background:#FCFCFC;
+    }
+    
   .info {
     background: none;
     flex-direction: column;
@@ -12,13 +16,6 @@ export const DetailsStyle = styled.section`
     margin-top: 4px;
     @media only screen and (min-width:768px ){
       margin-left: 40px;
-    }
-
-    #container {
-      background:#FCFCFC;
-    }
-    .ctn{
-      background: #FCFCFC;
     }
 
   }
@@ -131,8 +128,8 @@ export const DetailsStyle = styled.section`
 }
 
   .container-2 {
-    background: #fff;
-    box-shadow: 15px 15px 15px rgba(29, 28, 28, 0.07);
+    background: #FFFFFF;
+    box-shadow: 2px 2px 15px rgba(29, 28, 28, 0.07), -2px -2px 15px rgba(29, 28, 28, 0.07);
     border-radius: 8px;     
     width: 320px;
     height: 132px;
