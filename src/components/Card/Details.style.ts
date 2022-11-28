@@ -131,8 +131,8 @@ export const DetailsStyle = styled.section`
     background: #FFFFFF;
     box-shadow: 2px 2px 15px rgba(29, 28, 28, 0.07), -2px -2px 15px rgba(29, 28, 28, 0.07);
     border-radius: 8px;     
-    width: 320px;
-    height: 130px;
+    width: 290px;
+    height: 110px;
     margin-right: 10px;
     display: flex;
     justify-items: center;   
@@ -147,7 +147,7 @@ export const DetailsStyle = styled.section`
     color: #676767;
     border: 1px solid #FCFCFC;
     border-radius: 5px;
-    width: 260px;
+    width: 250px;
     height: 60px;
     padding: 1px 10px;
     margin-top: 1rem;
