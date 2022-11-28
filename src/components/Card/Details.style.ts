@@ -132,7 +132,7 @@ export const DetailsStyle = styled.section`
     box-shadow: 2px 2px 15px rgba(29, 28, 28, 0.07), -2px -2px 15px rgba(29, 28, 28, 0.07);
     border-radius: 8px;     
     width: 320px;
-    height: 132px;
+    height: 130px;
     margin-right: 10px;
     display: flex;
     justify-items: center;   
@@ -140,20 +140,22 @@ export const DetailsStyle = styled.section`
     flex-direction: column890 gh-reverse;
   }
   .ctn {
-    margin-left: 3.5rem;
+    margin-left: 2.5rem;
     margin-bottom: 1rem;
   }
   .textarea {
     color: #676767;
     border: 1px solid #FCFCFC;
     border-radius: 5px;
-    width: 270px;
+    width: 260px;
     height: 60px;
     padding: 1px 10px;
     margin-top: 1rem;
+    margin-left: 10px;
   }
   .obs {
     padding-top: 5px;
-    max-width: 200px;  
+    max-width: 200px; 
+    margin-left:10px; 
   }
   `

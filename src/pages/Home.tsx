@@ -8,8 +8,8 @@ function Navbar() {
   return (
     <>
       <Header hasSearch/>
-      <NavbarBs className="styleNavBarBs"
-      
+      <NavbarBs style={{ marginTop: "63px", backgroundColor: "#FCFCFC", height: "60px", justifyContent:"center", alignItems: "center"
+      }}      
         fixed="top"
       >
         <Nav className="styledNav">
