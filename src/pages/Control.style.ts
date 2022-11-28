@@ -14,20 +14,26 @@ export const ControlCards = styled.div `
   padding-bottom: 80px;
 
   @media only screen and (min-width: 720px) {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 95vh;
+    justify-content: space-between;
+    flex-flow:row wrap;
+    width: 70vh;
   }
 
   @media only screen and (min-width: 860px) {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 98vh;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    width: 75vh;
   }
 
   @media only screen and (min-width: 900px) {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 80vh;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    width: 75vh;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    flex-flow:row wrap;
+    justify-content: space-between;
+    width: 65vh;
   }
 `

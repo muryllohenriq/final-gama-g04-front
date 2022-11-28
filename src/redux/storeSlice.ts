@@ -66,8 +66,12 @@ export const store = createSlice({
         state.push(data);
       } 
     },
+    remove: (state, action) => {
+      const index = state.findIndex((item) => item.order.find((order) => order) === action.payload);
+      state.splice(index);
+    },
       },     
-    },      
+},      
 );
 
 // // enviar dados para o redux
@@ -76,5 +80,5 @@ export const store = createSlice({
 //   return alert()
 // }
 
-export const { add } = store.actions;
+export const { add, remove } = store.actions;
 export default store.reducer;
