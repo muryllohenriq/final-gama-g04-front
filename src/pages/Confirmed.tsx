@@ -14,7 +14,7 @@ export function Confirmed() {
       </strong>
       Enquanto isso, que tal conferir nossas outras delícias?
     </p>
-    <CustomLink to={/}>
+    <CustomLink to={'/'}>
     <Button>Voltar ao cardápio</Button>
     </CustomLink>
     </ConfirmedStyle>

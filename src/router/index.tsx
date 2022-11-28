@@ -10,7 +10,7 @@ import { Confirmed } from "../pages/Confirmed";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: < Confirmed />,
+    element: <Home />,
   },
   {
     path: "/details/:id",
@@ -31,9 +31,10 @@ const router = createBrowserRouter([
   {
     path: '/kitchen',
     element: <Kitchen />
-  }
+  },
   {
-    
+    path: '/Confirmed',
+    element: <Confirmed />,
   }
 ]);
 
