@@ -1,13 +1,14 @@
 import { CustomLink } from "../components/Card/Card.style";
 import Header from "../components/Header/Header";
 import {Button, ConfirmedStyle} from "./Confirmed.style"
+import confirmAnimation from "../assets/cardápio virtual800.gif"
 
 export function Confirmed() {
   return (
     <>
     <Header />
     <ConfirmedStyle>
-    <img src="/src/assets/cardápio virtual800.gif" alt=""/>
+    <img src={confirmAnimation} alt=""/>
     <p>
       <strong>
         Pedido sendo preparado! <br />
