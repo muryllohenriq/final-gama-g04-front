@@ -5,11 +5,12 @@ import { Control } from "../pages/Control";
 import { Bill } from "../pages/Bill";
 import  { Search }  from "../pages/Search";
 import  { Kitchen }  from "../pages/Kitchen";
+import { Confirmed } from "../pages/Confirmed";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: < Home />,
+    element: < Confirmed />,
   },
   {
     path: "/details/:id",
@@ -30,6 +31,9 @@ const router = createBrowserRouter([
   {
     path: '/kitchen',
     element: <Kitchen />
+  }
+  {
+    
   }
 ]);
 
