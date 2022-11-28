@@ -7,7 +7,7 @@ export function Confirmed() {
     <>
     <Header />
     <ConfirmedStyle>
-    <img src="/src/assets/animation.gif" alt=""/>
+    <img src="/src/assets/cardápio virtual800.gif" alt=""/>
     <p>
       <strong>
         Pedido sendo preparado! <br />
