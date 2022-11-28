@@ -8,6 +8,7 @@ import { TotalCard } from "../TotalCard/TotalCard";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { StoreState } from "../../redux";
+import { CustomLink } from "../Card/Card.style";
 
 export type ControlHeaderProps = {
   name?: string;
@@ -44,7 +45,9 @@ export function ControlHeader(props: ControlHeaderProps) {
         <strong>{props.name}</strong>
         <TableCard id={props.tableId}/>
       </div>
+      <CustomLink to={"/confirmed"}>
       <TotalCard onClick={handleClick} text={props.text} price={props.price} tableId={props.tableId} idProduct={props.idProduct}/>
+      </CustomLink>
       {props.show && 
       <div className="checkout">
         <button className="checkout-text">Confira seu pedido abaixo antes de enviar</button>
