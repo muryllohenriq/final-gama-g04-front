@@ -14,10 +14,8 @@ type CounterProps = {
 
 export function Counter(props:CounterProps) {
   const [count, setCount] = useState(1);
+
   const dispatch = useDispatch();
-  const getAmount = useSelector(
-    (state:StoreState) => state.store.find((table) => table.order)
-  );
     
     function handleClick() {
       dispatch(remove({}))
@@ -28,10 +26,10 @@ export function Counter(props:CounterProps) {
    <CounterStyle className= {props.name}>
     {count === 1 ? (
      <HiOutlineTrash
-      onClick={() => {}}
+      
      ></HiOutlineTrash>
     ) : (
-     <GrFormSubtract />
+     <GrFormSubtract onClick={() => setCount((count) => count - 1)}></GrFormSubtract>
     )}  
     <p>{count}</p>
     <GrFormAdd onClick={() =>  setCount((count) => count + 1)}></GrFormAdd>
