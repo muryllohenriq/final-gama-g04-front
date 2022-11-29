@@ -28,12 +28,12 @@ export const ControlCards = styled.div `
   @media only screen and (min-width: 900px) {
     flex-flow:row wrap;
     justify-content: space-between;
-    width: 75vh;
+    width: 105vh;
   }
 
   @media only screen and (min-width: 1200px) {
     flex-flow:row wrap;
     justify-content: space-between;
-    width: 65vh;
+    width: 85.5vh;
   }
 `
