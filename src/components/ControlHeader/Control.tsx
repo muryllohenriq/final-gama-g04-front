@@ -14,7 +14,7 @@ export type ControlHeaderProps = {
   name?: string;
   text: string;
   show?: boolean;
-  price:number;
+  price: number;
   tableId:number | string | null;
   idProduct: number;
 }
@@ -24,7 +24,6 @@ export function ControlHeader(props: ControlHeaderProps) {
   const { id } = useParams();
   const  dispatch = useDispatch();
   const [tables, setTables] = useState<TableCardProps[]>([]);
-  const totalPrice = useSelector((state: StoreState) => state.store);
 
   async function getTables() {
     const {data} = await api.get("tables");

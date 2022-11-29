@@ -10,20 +10,24 @@ export function Control() {
   const id = urlParams.get('table');  
 
   
-    const listadePratos = useSelector(
-    (state: StoreState) => state.store)
+  const listadePratos = useSelector(
+    (state: StoreState) => state.store
+  )
 
-    let totalPrice = useSelector(
-      (state: StoreState) => state.store.map((item) => item.order.filter((itens,total) => total += (itens.amount * itens.price)))
+  let getTotal = useSelector(
+    (state: StoreState) => state.store.map(
+      (item) => item.order.reduce(
+        (total:number, itens) => total += (itens.amount * itens.price), 0
       )
+    )
+  );
+
+  let totalPrice = getTotal.reduce((total) => total);
+
 
   return(
     <>
-    {listadePratos.map((pratos) => {return (
-      pratos.order.map((order, total) => {return (
-    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={total = total + (order.price * order.amount)} tableId={id}/>
-      )})
-    )})}
+    <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={totalPrice} tableId={id}/>
     <ControlDiv>
       <ControlCards>
       {listadePratos.map((prato) => { 

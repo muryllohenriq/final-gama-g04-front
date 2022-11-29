@@ -17,7 +17,7 @@ export const NavbarBottom = styled(Navbar)`
         }
 
         @media only screen and (min-width: 1000px) {
-          width: 40%;
+          width: 43%;
         }
 `
 

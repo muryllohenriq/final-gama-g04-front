@@ -10,10 +10,10 @@ export const ControlStyle = styled.section`
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    width: 100%;
+    width: 50vh;
 
     @media only screen and (min-width: 720px) {
-      width: 30%;
+      width: 80vh;
     }
   }
 
