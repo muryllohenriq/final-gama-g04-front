@@ -14,13 +14,16 @@ export function Control() {
     (state: StoreState) => state.store
   )
 
-  let totalPrice = useSelector(
+  let getTotal = useSelector(
     (state: StoreState) => state.store.map(
       (item) => item.order.reduce(
         (total:number, itens) => total += (itens.amount * itens.price), 0
       )
     )
   );
+
+  let totalPrice = getTotal.reduce((total) => total);
+
 
   return(
     <>
