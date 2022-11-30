@@ -38,7 +38,7 @@ export function ControlHeader(props: ControlHeaderProps) {
 
   return (
     <>
-    <Header />
+    <Header hasGoBack />
     <ControlStyle>
       <div className="title">
         <strong>{props.name}</strong>
