@@ -22,8 +22,17 @@ export function Control() {
     )
   );
 
-  let totalPrice = getTotal.reduce((total) => total);
+  if (getTotal.length > 0) {
+    getTotal.reduce((total) => total);
+  } else {
+    return (
+      <>
+      <ControlHeader text="Enviar pedido para cozinha" name="Comanda" show={true} idProduct={1} price={0} tableId={id}/>
+      </>
+    ) 
+  }
 
+  let totalPrice = getTotal.reduce((total) => total);
 
   return(
     <>
